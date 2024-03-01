@@ -24,10 +24,10 @@ pnpm build
 ```
 
 
+
 ### 参考资料
-1. https://github.com/xiangshu233/vue3-vant4-mobile
-
-
+1. https://github.com/youlaitech/mall-app   （uniapp ）
+2. https://github.com/xiangshu233/vue3-vant4-mobile  （vant）
 
 
 
