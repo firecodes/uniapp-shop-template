@@ -22,7 +22,7 @@ const baseViewportOpts = {
   appSelector: '#app', // 根元素选择器，用于设置桌面端和横屏时的居中样式
   viewportWidth: 375, // 设计稿的视口宽度，可传递函数动态生成视图宽度
   unitPrecision: 3, // 单位转换后保留的精度（很多时候无法整除）
-  maxDisplayWidth: 600, // 桌面端最大展示宽度
+  maxDisplayWidth: 768, // 桌面端最大展示宽度
   propList: [
     '*',
     // '!font-size'
