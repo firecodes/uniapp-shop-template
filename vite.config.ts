@@ -10,7 +10,7 @@ import { configSvgIconsPlugin, configMockPlugin, configCompressPlugin } from './
 const isBuild = false
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: VITE_PUBLIC_PATH,
+  base: './',
   // root,
   plugins: [
     vue(),
