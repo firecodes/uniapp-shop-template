@@ -7,6 +7,7 @@ import { VantResolver } from '@vant/auto-import-resolver';
 import { resolve } from 'path';
 import UnoCSS from 'unocss/vite'
 
+import Icons from 'unplugin-icons/vite'
 import { configSvgIconsPlugin, configMockPlugin, configCompressPlugin, setupBuild } from './build/vite/plugin/index'
 const target = 'http://localhost:8088'
 
@@ -44,6 +45,10 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
         //   // dts: "src/types/components.d.ts",
         // }),        
         UnoCSS(),
+        Icons({
+          // 自动安装图标库
+          autoInstall: true
+        }),
         configSvgIconsPlugin(true),
         configMockPlugin(!isDevelopment, prodMock)
         // configCompressPlugin('none', true)
@@ -68,6 +73,11 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
           // 注入全局 less 变量
           additionalData: `@import "src/assets/styles/var.less";`,
         },
+        //define global scss variable
+        // scss: {
+        //   javascriptEnabled: true,
+        //   additionalData: ` @use "@/styles/variables.scss" as *;`
+        // }
       },
     },
     // 定义全局常量替换方式
