@@ -1,117 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" id="htmlRoot" class>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + TS + H5 </title>
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1623819_3g3arzgtlmk.css">
-    <script type="module" crossorigin src="./js/index-e35fb8b8.js"></script>
-    <link rel="stylesheet" href="./css/index-6ae377f2.css">
-  </head>
-  <body>
-    <div id="app">
-      <script>
-        var designSetting = JSON.parse(window.localStorage.getItem('DESIGN-SETTING')) ||{}
-        ;(() => {
-          let htmlRoot = document.getElementById('htmlRoot')
-          let darkMode = designSetting.darkMode
-          if (htmlRoot && darkMode) {
-            htmlRoot.setAttribute('data-theme', darkMode)
-            darkMode = htmlRoot = null
-          } else {
-            htmlRoot.setAttribute('data-theme', 'light')
-          }
+<html lang="en">
 
-          // 设置主题色变量
-          document.documentElement.style.setProperty(
-            '--app-theme-color',
-            designSetting.appTheme,
-          )
-        })()
-      </script>
-      <style>
-        body {
-          margin: 0;
-        }
-        html[data-theme='dark'] .first-loading-wrap {
-          background-color: #101014;
-        }
-        .first-loading-wrap {
-          display: flex;
-          width: 100%;
-          height: 100vh;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-        }
-        .first-loading-wrap > h1 {
-          font-size: min(7.467vw, 44.8px);
-        }
-        .first-loading-wrap .loading-wrap {
-          padding: min(26.133vw, 156.8px);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .dot {
-          animation: antRotate 1.2s infinite linear;
-          transform: rotate(45deg);
-          position: relative;
-          display: inline-block;
-          font-size: min(3.2vw, 19.2px);
-          width: min(8vw, 48px);
-          height: min(8vw, 48px);
-          box-sizing: border-box;
-        }
-        .dot i {
-          width: min(3.733vw, 22.4px);
-          height: min(3.733vw, 22.4px);
-          position: absolute;
-          display: block;
-          background: var(--app-theme-color);
-          border-radius: 100%;
-          transform: scale(0.75);
-          transform-origin: 50% 50%;
-          opacity: 0.3;
-          animation: antSpinMove 1s infinite linear alternate;
-        }
-        .dot i:nth-child(1) {
-          top: 0;
-          left: 0;
-        }
-        .dot i:nth-child(2) {
-          top: 0;
-          right: 0;
-          animation-delay: 0.4s;
-        }
-        .dot i:nth-child(3) {
-          right: 0;
-          bottom: 0;
-          animation-delay: 0.8s;
-        }
-        .dot i:nth-child(4) {
-          bottom: 0;
-          left: 0;
-          animation-delay: 1.2s;
-        }
-        @keyframes antRotate {
-          to {
-            transform: rotate(405deg);
-          }
-        }
-        @keyframes antSpinMove {
-          to {
-            opacity: 1;
-          }
-        }
-      </style>
-      <div class="first-loading-wrap">
-        <div class="loading-wrap">
-          <span class="dot dot-spin"><i></i><i></i><i></i><i></i></span>
-        </div>
-      </div>
-    </div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="vue-vant的vue3版本" />
+  <meta name="keywords" content="vue-vant" />
+  <title>vue3-ts-h5</title>
+  <script type="module" crossorigin src="./static/js/index-9c033969.js"></script>
+  <link rel="modulepreload" crossorigin href="./static/js/@vue-039bafd1.js">
+  <link rel="modulepreload" crossorigin href="./static/js/@vant-89f9aa5a.js">
+  <link rel="modulepreload" crossorigin href="./static/js/vant-1bcf7b33.js">
+  <link rel="modulepreload" crossorigin href="./static/js/pinia-8fce3011.js">
+  <link rel="modulepreload" crossorigin href="./static/js/pinia-plugin-persist-4bd0ee57.js">
+  <link rel="modulepreload" crossorigin href="./static/js/vue-router-62dfdcb8.js">
+  <link rel="modulepreload" crossorigin href="./static/js/axios-a342f982.js">
+  <link rel="modulepreload" crossorigin href="./static/js/es-errors-82fd953f.js">
+  <link rel="modulepreload" crossorigin href="./static/js/has-symbols-e8f3ca0e.js">
+  <link rel="modulepreload" crossorigin href="./static/js/has-proto-1353c55e.js">
+  <link rel="modulepreload" crossorigin href="./static/js/function-bind-61637ca6.js">
+  <link rel="modulepreload" crossorigin href="./static/js/hasown-bc561cf0.js">
+  <link rel="modulepreload" crossorigin href="./static/js/get-intrinsic-88feedc6.js">
+  <link rel="modulepreload" crossorigin href="./static/js/es-define-property-cfa03815.js">
+  <link rel="modulepreload" crossorigin href="./static/js/gopd-4c4454f6.js">
+  <link rel="modulepreload" crossorigin href="./static/js/define-data-property-d38573ea.js">
+  <link rel="modulepreload" crossorigin href="./static/js/has-property-descriptors-68e2873e.js">
+  <link rel="modulepreload" crossorigin href="./static/js/set-function-length-ecd19468.js">
+  <link rel="modulepreload" crossorigin href="./static/js/call-bind-0362a3f2.js">
+  <link rel="modulepreload" crossorigin href="./static/js/object-inspect-46f86162.js">
+  <link rel="modulepreload" crossorigin href="./static/js/side-channel-27cf7d8c.js">
+  <link rel="modulepreload" crossorigin href="./static/js/qs-3adf1c80.js">
+  <link rel="modulepreload" crossorigin href="./static/js/lodash-es-4d284b0e.js">
+  <link rel="modulepreload" crossorigin href="./static/js/mockjs-5811d250.js">
+  <link rel="modulepreload" crossorigin href="./static/js/path-to-regexp-31db6522.js">
+  <link rel="modulepreload" crossorigin href="./static/js/vite-plugin-mock-3c140df3.js">
+  <link rel="stylesheet" href="./static/css/vant-dea77160.css">
+  <link rel="stylesheet" href="./static/css/index-8eb58767.css">
+  <link rel="stylesheet" href="./static/css/@unocss-07fdbb10.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  
+</body>
+
 </html>
