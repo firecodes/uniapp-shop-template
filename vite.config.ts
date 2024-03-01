@@ -7,7 +7,7 @@ import { VantResolver } from '@vant/auto-import-resolver';
 import { resolve } from 'path';
 import UnoCSS from 'unocss/vite'
 
-import { configSvgIconsPlugin, configMockPlugin, configCompressPlugin } from './build/vite/plugin/index'
+import { configSvgIconsPlugin, configMockPlugin, configCompressPlugin, sanitizeFileName } from './build/vite/plugin/index'
 const target = 'http://localhost:8088'
 
 // https://vitejs.dev/config/
@@ -98,25 +98,28 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       // chunk 大小警告的限制（以 kbs 为单位）
       chunkSizeWarningLimit: 2000,
       // 自定义底层的 Rollup 打包配置
-      // rollupOptions: {
-      //   // 静态资源分类打包
-      //   output: {
-      //     chunkFileNames: 'js/[name]-[hash].js', // 引入文件名的名称
-      //     entryFileNames: 'js/[name]-[hash].js', // 包的入口文件名称
-      //     assetFileNames: '[ext]/[name]-[hash].[ext]', // 资源文件像 字体，图片等
-      //     // 将 node_modules 三方依赖包最小化拆分
-      //     manualChunks(id) {
-      //       if (id.includes('node_modules') && !id.includes('@antv')) {
-      //         const paths = id.toString().split('node_modules/')
-      //         if (paths[2]) {
-      //           return paths[2].split('/')[0].toString()
-      //         }
+      rollupOptions: {
+        // 静态资源分类打包
+        output: {
+          //  处理GitHubPages 部署 _plugin-vue_export-helper.js 404 
+          sanitizeFileName,
+          chunkFileNames: 'js/[name]-[hash].js', // 引入文件名的名称
+          entryFileNames: 'js/[name]-[hash].js', // 包的入口文件名称
+          assetFileNames: '[ext]/[name]-[hash].[ext]', // 资源文件像 字体，图片等
+          // // 将 node_modules 三方依赖包最小化拆分
+          // manualChunks(id) {
+          //   if (id.includes('node_modules') && !id.includes('@antv')) {
+          //     const paths = id.toString().split('node_modules/')
+          //     if (paths[2]) {
+          //       return paths[2].split('/')[0].toString()
+          //     }
 
-      //         return paths[1].split('/')[0].toString()
-      //       }
-      //     },
-      //   },
-      // },
+          //     return paths[1].split('/')[0].toString()
+          //   }
+          // },
+
+        },
+      },
     },
   }
 };
