@@ -1,7 +1,7 @@
 <template>
   <vanConfigProvider :theme="getDarkMode" :theme-vars="getThemeVars()">
     <routerView v-slot="{ Component }">
-      <div class="absolute bottom-0 top-0 w-full overflow-hidden">
+      <div class="absolute bottom-0 top-0 w-full">
         <transition :name="getTransitionName" mode="out-in" appear>
           <keep-alive v-if="keepAliveComponents" :include="keepAliveComponents">
             <component :is="Component" />
@@ -73,4 +73,6 @@ const getTransitionName = computed(() => {
 })
 </script>
 
-<style lang="less"></style>
+<style lang="less">
+@import './assets/styles/index.less';
+</style>

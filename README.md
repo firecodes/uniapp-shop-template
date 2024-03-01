@@ -1,4 +1,12 @@
-# vue3-ts
+<h1 align="center">vue3-vant4-mobile</h1>
+
+## 介绍
+ H5 模板，参考H5网站，用的ui组件，后续根据相关网站做一些网页
+
+# 网站(H5)
+1. 游戏交易商城 ( https://m.5173.com/ )  --ui 组件 vant
+2. 移动积分商城 ( https://m.jf.10086.cn/ )  -- uniapp 小程序
+3. 游戏交易商城2 ( https://m1.pxb7.com/pages/buy/index) --- taro
 
 ## Project setup
 ```
@@ -16,5 +24,11 @@ pnpm build
 ```
 
 
-### Customize configuration
-See [Configuration Reference](https://vitejs.cn/guide/features.html).
+### 参考资料
+1. https://github.com/xiangshu233/vue3-vant4-mobile
+
+
+
+
+
+

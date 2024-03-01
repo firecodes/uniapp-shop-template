@@ -5,6 +5,9 @@ import { VantResolver } from '@vant/auto-import-resolver';
 import { resolve } from 'path';
 import UnoCSS from 'unocss/vite'
 
+import { configSvgIconsPlugin, configMockPlugin, configCompressPlugin } from './build/vite/plugin/index'
+
+const isBuild = false
 // https://vitejs.dev/config/
 export default defineConfig({
   // base: VITE_PUBLIC_PATH,
@@ -15,6 +18,9 @@ export default defineConfig({
       resolvers: [VantResolver()],
     }),
     UnoCSS(),
+    configSvgIconsPlugin(isBuild),
+    configMockPlugin(isBuild, true),
+    // configCompressPlugin('none', true)
   ],
   resolve: {
     alias: [{
@@ -44,7 +50,7 @@ export default defineConfig({
   server: {
     host: true,
     // 服务启动时是否自动打开浏览器
-    open: true,
+    open: false,
     // 服务端口号
     port: 8088,
     // proxy: {

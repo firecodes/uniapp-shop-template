@@ -41,7 +41,7 @@ import { computed, reactive } from 'vue'
 import { Icon } from '@vicons/utils'
 import { CheckOutlined } from '@vicons/antd'
 import NavBar from './components/NavBar.vue'
-import { updateDarkSign } from '@/theme'
+import { updateDarkSign } from '@/utils/theme'
 import { useDesignSettingStore } from '@/store/modules/designSetting'
 import { animates as animateOptions } from '@/settings/animateSetting'
 
@@ -76,7 +76,7 @@ function openAnimatePick() {
   }
 }
 
-function handleSaveAnimateType({ selectedOptions }) {
+function handleSaveAnimateType({ selectedOptions }: any) {
   animateState.text = selectedOptions[0].text
   designStore.setPageAnimateType(selectedOptions[0].value)
   animateState.showPicker = false

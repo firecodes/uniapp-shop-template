@@ -16,7 +16,7 @@ export function getStorageShortName() {
 }
 
 export function getAppEnvConfig() {
-  const ENV_NAME = ''
+  const ENV_NAME = 'vantMobile'
 
   // Get the global configuration (the configuration will be extracted independently when packaging)
   const ENV = (import.meta.env.DEV
@@ -24,8 +24,8 @@ export function getAppEnvConfig() {
     : window[ENV_NAME as any]) as unknown as GlobEnvConfig
 
   const {
-    VITE_GLOB_APP_TITLE,
-    VITE_GLOB_APP_TITLE_CN,
+    VITE_GLOB_APP_TITLE = 'vantMobile',
+    VITE_GLOB_APP_TITLE_CN = 'vue3-vant4-mobile',
     VITE_GLOB_API_URL,
     VITE_GLOB_APP_SHORT_NAME,
     VITE_GLOB_API_URL_PREFIX,

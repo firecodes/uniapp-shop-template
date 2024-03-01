@@ -7,9 +7,9 @@
       <h1 class="text-base text-gray-500">
         抱歉，服务器出错了
       </h1>
-      <n-button type="info" @click="goHome">
+      <van-button type="primary" @click="goHome">
         回到首页
-      </n-button>
+      </van-button>
     </div>
   </div>
 </template>
