@@ -5,8 +5,8 @@
 
 # 网站(H5)
 1. 游戏交易商城 ( https://m.5173.com/ )  --ui 组件 vant
-2. 移动积分商城 ( https://m.jf.10086.cn/ )  -- uniapp 小程序
-3. 游戏交易商城2 ( https://m1.pxb7.com/pages/buy/index) --- taro
+2. 移动积分商城 ( https://m.jf.10086.cn/ )  -- taro
+3. 游戏交易商城2 ( https://m1.pxb7.com/pages/buy/index) --- uniapp 小程序
 
 # 分支版本 搭建H5项目版本
 1. -ui 组件 vant ( https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-tempalte )
