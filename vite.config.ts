@@ -17,7 +17,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, root)
   const isDevelopment = mode === 'development'
   const prodMock = true
-  console.log("ConfigEnv:", env, command, mode, isDevelopment)
+  console.log("ConfigEnv:", root, env, command, mode, isDevelopment)
   return {
     base: './',
     // root,

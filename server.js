@@ -1,7 +1,23 @@
+/* eslint-disable no-undef */
+const express = require('express');
+const portfinder = require('portfinder');
+const fse = require('fs-extra');
+const shell = require('shelljs');
 
-var server = require('pushstate-server');
-
-server.start({
-  port: 5008,
-  directory: './dist'
-});
+module.exports = function start() {
+  let dist = 'dist' // distjs | distTs
+  const server = express()
+  portfinder.setBasePort(8085)
+  fse.exists(dist, (exists) => {
+    if (exists) {
+      portfinder.getPort((err, port) => {
+        server.listen(port)
+        shell.echo(`the url is : http://localhost:${port}`)
+        // server.use('/libs/sdk/', express.static(dist))
+        server.use(express.static('dist'))
+      })
+    } else {
+      shell.echo(`please run build first`)
+    }
+  })
+}
