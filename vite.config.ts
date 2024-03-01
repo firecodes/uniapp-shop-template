@@ -27,6 +27,22 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
         Components({
           resolvers: [VantResolver()],
         }),
+        // Components({
+        //   resolvers: [
+        //     // 自动导入 Element Plus 组件
+        //     ElementPlusResolver(),
+        //     // 自动导入图标组件
+        //     IconsResolver({
+        //       // @iconify-json/ep 是 Element Plus 的图标库
+        //       enabledCollections: ['ep']
+        //     })
+        //   ],
+        //   // 指定自定义组件位置(默认:src/components)
+        //   dirs: ['src/**/components'],
+        //   // 配置文件位置(false:关闭自动生成)
+        //   dts: false
+        //   // dts: "src/types/components.d.ts",
+        // }),        
         UnoCSS(),
         configSvgIconsPlugin(true),
         configMockPlugin(!isDevelopment, prodMock)
