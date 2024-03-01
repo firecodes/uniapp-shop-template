@@ -1,0 +1,1 @@
+import{_ as e}from"./NavBar.vuevuetypescriptsetuptruelang-06bb6933.js";import{d as o,v as a,b as t,L as s,D as r}from"./index-3d2bf020.js";import"./index-0b8935aa.js";import"./Icon-bece88cc.js";const n=s("p",null,"修改登录密码页面",-1),f=o({__name:"ChangePassword",setup(_){return(c,m)=>(r(),a("div",null,[t(e),n]))}});export{f as default};
