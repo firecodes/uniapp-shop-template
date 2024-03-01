@@ -29,6 +29,8 @@ pnpm build
 1. https://github.com/youlaitech/mall-app   （uniapp ）
 2. https://github.com/xiangshu233/vue3-vant4-mobile  （vant）
 
+### 打包问题
+1./_plugin-vue_export-helper-c27b6911.js 404 ( https://blog.csdn.net/iotjin/article/details/133136094)
 
 
 

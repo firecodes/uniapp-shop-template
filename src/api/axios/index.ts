@@ -21,7 +21,7 @@ import router from '@/router'
 import { storage } from '@/utils/Storage'
 
 const globSetting = useGlobSetting()
-const urlPrefix = globSetting.urlPrefix || ''
+const urlPrefix = globSetting.urlPrefix || '/api'
 
 /**
  * @description: 数据处理，方便区分多种处理方式
