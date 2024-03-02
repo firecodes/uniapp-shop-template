@@ -3,6 +3,8 @@
 ## 介绍
  H5 模板，参考H5网站，用的ui组件，后续根据相关网站做一些网页
 
+# 创建初始化项目模板 (https://github.com/vant-ui/vant-demo)
+
 # 网站(H5)
 1. 游戏交易商城 ( https://m.5173.com/ )  --ui 组件 vant
 2. 移动积分商城 ( https://m.jf.10086.cn/ )  -- taro
