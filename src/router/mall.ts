@@ -34,7 +34,7 @@ const routeModuleList: Array<RouteRecordRaw> = [{
   }, {
     path: '/vue/center',
     name: 'center',
-    meta: { title: '我的', icon: 'wap-home', innerPage: true, keepAlive: false, },
+    meta: { title: '个人中心', icon: 'wap-home', innerPage: true, keepAlive: false, hiddenHeader: false },
     component: () => import('@/page/center/index.vue'),
   }]
 }]
