@@ -22,7 +22,7 @@ const baseViewportOpts = {
   appSelector: '#app', // 根元素选择器，用于设置桌面端和横屏时的居中样式
   viewportWidth: 375, // 设计稿的视口宽度，可传递函数动态生成视图宽度
   unitPrecision: 3, // 单位转换后保留的精度（很多时候无法整除）
-  maxDisplayWidth: 768, // 桌面端最大展示宽度
+  // maxDisplayWidth: 768, // 桌面端最大展示宽度
   propList: [
     '*',
     // '!font-size'
@@ -43,17 +43,17 @@ const baseViewportOpts = {
 export default {
   plugins: [
     autoprefixer(),
-    viewport({
-      //...baseViewportOpts,
-      // 只将 vant 转为 375 设计稿的 viewport，其它样式的视图宽度为 750
-      // viewportWidth: file => (file.includes('node_modules/vant/') ? 375 : 750),
-    }),
-    {
-      "postcss-pxtorem": {
-        rootValue: 37.5, // Vant 官方根字体大小是 37.5
-        propList: ['*'],
-        selectorBlackList: ['.norem'] // 过滤掉.norem-开头的class，不进行rem转换
-      }
-    }
+    // viewport({
+    //   ...baseViewportOpts,
+    //   // 只将 vant 转为 375 设计稿的 viewport，其它样式的视图宽度为 750
+    //   // viewportWidth: file => (file.includes('node_modules/vant/') ? 375 : 750),
+    // }),
+    // {
+    //   "postcss-pxtorem": {
+    //     rootValue: 37.5, // Vant 官方根字体大小是 37.5
+    //     propList: ['*'],
+    //     selectorBlackList: ['.norem'] // 过滤掉.norem-开头的class，不进行rem转换
+    //   }
+    // }
   ],
 }

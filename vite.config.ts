@@ -45,10 +45,10 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
         //   // dts: "src/types/components.d.ts",
         // }),        
         UnoCSS(),
-        Icons({
-          // 自动安装图标库
-          autoInstall: true
-        }),
+        // Icons({
+        //   // 自动安装图标库
+        //   autoInstall: true
+        // }),
         configSvgIconsPlugin(true),
         // configMockPlugin(!isDevelopment, prodMock)
         // configCompressPlugin('none', true)
@@ -67,12 +67,12 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
     },
     css: {
       preprocessorOptions: {
-        less: {
-          modifyVars: {},
-          javascriptEnabled: true,
-          // 注入全局 less 变量
-          additionalData: `@import "src/assets/styles/var.less";`,
-        },
+        // less: {
+        //   modifyVars: {},
+        //   javascriptEnabled: true,
+        //   // 注入全局 less 变量
+        //   additionalData: `@import "src/assets/styles/var.less";`,
+        // },
         //define global scss variable
         // scss: {
         //   javascriptEnabled: true,

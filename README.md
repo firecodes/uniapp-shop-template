@@ -29,6 +29,7 @@ pnpm build
 1. https://github.com/youlaitech/mall-app   （uniapp ）
 2. https://github.com/xiangshu233/vue3-vant4-mobile  （vant）
 3. https://github.com/iotjin/jh-vue3-admin (配置,解决打包问题)
+4. https://github.com/newbee-ltd/newbee-mall-vue3-app (mall demo )
 
 
 ### 打包问题
