@@ -50,7 +50,7 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
           autoInstall: true
         }),
         configSvgIconsPlugin(true),
-        configMockPlugin(!isDevelopment, prodMock)
+        // configMockPlugin(!isDevelopment, prodMock)
         // configCompressPlugin('none', true)
       ]
       return list
