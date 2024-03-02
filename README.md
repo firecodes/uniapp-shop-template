@@ -10,6 +10,8 @@
 
 # 分支版本 搭建H5项目版本
 1. -ui 组件 vant ( https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-tempalte )
+1. mall-demo vant ( https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo )
+1. mall-demo2 vant ( https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo2 )
 
 
 
@@ -32,7 +34,7 @@ pnpm build
 ### 参考资料
 1. https://github.com/youlaitech/mall-app   （uniapp ）
 2. https://github.com/xiangshu233/vue3-vant4-mobile  （vant）
-
+3. https://github.com/newbee-ltd/newbee-mall-vue3-app （ vant）
 
 
 
