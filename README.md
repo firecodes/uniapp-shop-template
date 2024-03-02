@@ -10,7 +10,7 @@
 <a href="https://firecodes.github.io/uniapp-shop-template/dist-mall-demo/"> 商城项目demo</a> 
 
 # uniapp 小程序
----正在开发中---
+<a href="https://firecodes.github.io/uniapp-shop-template/dist/"> uniapp 项目模板</a>
 
 
 
