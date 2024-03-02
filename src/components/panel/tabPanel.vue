@@ -60,13 +60,13 @@
   padding: .1rem 0 .2rem;
   font-size: .28rem;
   line-height: .5rem;
-  text-align: span;
+  text-align: center;
   float: left
 }
 
 .tab-class01 ul li a {
   display: block;
-  text-align: span;
+  text-align: center;
   color: #333
 }
 
@@ -75,7 +75,8 @@
   margin-bottom: .05rem;
   width: 1.28rem;
   height: 1.28rem;
-  border-radius: 15%
+  border-radius: 15%;
+  margin: 0px auto;
 }
 
 .tab-class01 ul li a p {

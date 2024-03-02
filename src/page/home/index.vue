@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen flex flex-col ">
-    <div class="w-full">
+    <div class="w-full fixed-sticky">
       <appdownload></appdownload>
       <indexHeader></indexHeader>
     </div>
@@ -88,7 +88,7 @@ import indexHeader from "./header.vue";
 
 
 defineOptions({
-  name: 'DashboardPage',
+  name: 'Home',
 })
 
 const designStore = useDesignSettingStore()
