@@ -6,19 +6,20 @@ import { useRouteStoreWidthOut } from '@/store/modules/route'
 import { ErrorPageRoute, LoginRoute, RootRoute } from '@/router/base'
 import { createRouterGuards } from '@/router/router-guards'
 import routeModuleList from '@/router/modules'
-
-// 菜单
+import routeMallList from '@/router/mall'
 
 // 普通路由
 export const constantRouter: RouteRecordRaw[] = [LoginRoute, RootRoute, ErrorPageRoute]
-
+const allRouter = constantRouter.concat(routeModuleList).concat(routeMallList)
+const emptyRouter: any = []
+//  constantRouter.concat(...routeModuleList).concat(...routeMallList)
 const routeStore = useRouteStoreWidthOut()
 routeStore.setMenus(routeModuleList)
-routeStore.setRouters(constantRouter.concat(routeModuleList))
+routeStore.setRouters(allRouter)
 
 const router = createRouter({
   history: createWebHashHistory(''),
-  routes: constantRouter.concat(...routeModuleList),
+  routes: emptyRouter.concat(...allRouter),
   strict: true,
   scrollBehavior: () => ({ left: 0, top: 0 }),
 })

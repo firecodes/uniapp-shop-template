@@ -23,7 +23,7 @@ export function createRouterGuards(router: Router) {
     }
 
     // Whitelist can be directly entered
-    if (whitePathList.includes(to.path as PageEnum)) {
+    if (to.path.includes(PageEnum.MALL_PAGE_NAME) || whitePathList.includes(to.path as PageEnum)) {
       next()
       return
     }

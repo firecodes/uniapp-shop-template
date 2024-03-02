@@ -9,6 +9,8 @@ import 'virtual:svg-icons-register'
 import 'vant/es/toast/style'
 import 'vant/es/dialog/style'
 
+import '@/assets/styles/index.less'
+
 
 import { createApp } from 'vue'
 import App from './App.vue'

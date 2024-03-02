@@ -1,0 +1,121 @@
+
+.newfooter {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  background: #fcfcfc;
+  font-size: .22rem;
+  text-align: center;
+  z-index: 20;
+  line-height: 0rem !important
+}
+
+.newfooter ul li {
+  float: left;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 25% !important;
+  font-weight: normal !important;
+  position: relative;
+  color: #5f646e
+}
+
+.newfooter ul li a {
+  color: #5f646e;
+  display: inline-block;
+  width: 100%
+}
+
+.newfooter ul li span {
+  display: block;
+  line-height: .42rem;
+  padding-top: .52rem
+}
+
+.newfooter ul .active {
+  color: #ff6600
+}
+
+.newfooter ul li .i_home {
+  background: url(../images/Icon/m_home.png) no-repeat center .1rem;
+  background-size: .47rem
+}
+
+.newfooter ul .active .i_home {
+  background: url(../images/Icon/mred_home.png) no-repeat center .1rem;
+  background-size: .47rem
+}
+
+.newfooter ul li .i_mysell {
+  background: url(../images/Icon/membersell_logo.png) no-repeat center .1rem;
+  background-size: .47rem
+}
+
+.newfooter ul .active .i_mysell {
+  background: url(../images/Icon/redsell_logo.png) no-repeat center .1rem;
+  background-size: .47rem
+}
+
+.newfooter ul li .i_message {
+  background: url(../images/Icon/message.png) no-repeat center .1rem;
+  background-size: .47rem
+}
+
+.newfooter ul .active .i_message {
+  background: url(../images/Icon/redmessage.png) no-repeat center .1rem;
+  background-size: .47rem
+}
+
+.newfooter ul li .i_tx {
+  background: url(../images/Icon/touxiang.png) no-repeat center .1rem;
+  background-size: .47rem
+}
+
+.newfooter ul .active .i_tx {
+  background: url(../images/Icon/redtx.png) no-repeat center .1rem;
+  background-size: .47rem
+}
+
+.newfooter .tsme {
+  display: none;
+  top: .05rem;
+  left: 55%;
+  border: 1px solid #fff;
+  position: absolute;
+  font-size: .2rem;
+  line-height: .3rem;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #ff6600;
+  border-radius: 2em;
+  width: .3rem
+}
+
+.newfooter ul li .i_redDot {
+  display: inline-block;
+  width: .18rem;
+  height: .18rem;
+  background: #ff6600;
+  border-radius: 100%;
+  position: absolute;
+  top: .1rem;
+  left: 61%;
+  padding-top: 0
+}
+
+.newfooter ul li {
+  width: 20% !important
+}
+
+.newfooter ul li .i_mybuy {
+  background: url(../images/Icon/m_mybuy.png) no-repeat center .1rem;
+  background-size: .47rem
+}
+
+.newfooter ul .active .i_mybuy {
+  background: url(../images/Icon/mred_mybuy.png) no-repeat center .1rem;
+  background-size: .47rem
+}

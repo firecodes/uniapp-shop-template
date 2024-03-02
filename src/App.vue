@@ -1,78 +1,38 @@
 <template>
-  <vanConfigProvider :theme="getDarkMode" :theme-vars="getThemeVars()">
-    <routerView v-slot="{ Component }">
-      <div class="absolute bottom-0 top-0 w-full">
-        <transition :name="getTransitionName" mode="out-in" appear>
-          <keep-alive v-if="keepAliveComponents" :include="keepAliveComponents">
-            <component :is="Component" />
-          </keep-alive>
-        </transition>
-      </div>
-    </routerView>
-  </vanConfigProvider>
+  <div>
+    <template v-if="getPathMall()">
+      <MallApp></MallApp>
+    </template>
+    <template v-else>
+      <DefaultApp></DefaultApp>
+    </template>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { computed, unref } from 'vue'
-import { darken, lighten } from '@/utils/index'
 import { useRouteStore } from '@/store/modules/route'
-import { useDesignSetting } from '@/hooks/setting/useDesignSetting'
+import DefaultApp from '@/layout/default/App.vue'
+import MallApp from '@/layout/mall/App.vue'
+import { PageEnum } from '@/enums/pageEnum'
+import { useRoute } from 'vue-router';
 
+import { ComponentInternalInstance, getCurrentInstance, onMounted } from "vue";
+const { ctx }: any = getCurrentInstance(); //获取上下文实例，ctx=vue2的this
+const { proxy }: any = getCurrentInstance() // 使用proxy代替ctx，因为ctx只在开发环境有效
+const instance: any = getCurrentInstance() as ComponentInternalInstance
+const { appContext: { config: { globalProperties: global } } }: any = getCurrentInstance();//3.0.11
+
+const route = useRoute();
 const routeStore = useRouteStore()
-const { getDarkMode, getAppTheme, getIsPageAnimate, getPageAnimateType } = useDesignSetting()
-
-// 需要缓存的路由组件
-const keepAliveComponents = computed(() => routeStore.keepAliveComponents)
-
-function getThemeVars() {
-  const appTheme = unref(getAppTheme)
-  const darkenStr = darken(appTheme, 25)
-  const lightenStr = lighten(appTheme, 10)
-
-  return {
-    actionSheetCancelTextColor: appTheme,
-    buttonPrimaryBackground: appTheme,
-    buttonPrimaryBorderColor: appTheme,
-    radioCheckedIconColor: appTheme,
-    sliderActiveBackground: appTheme,
-    cascaderActiveColor: appTheme,
-    checkboxCheckedIconColor: appTheme,
-    numberKeyboardButtonBackground: appTheme,
-    pickerLoadingIconColor: appTheme,
-    calendarRangeEdgeBackground: appTheme,
-    calendarRangeMiddleColor: appTheme,
-    calendarSelectedDayBackground: appTheme,
-    stepperButtonRoundThemeColor: appTheme,
-    switchOnBackground: appTheme,
-    dialogConfirmButtonTextColor: appTheme,
-    dropdownMenuOptionActiveColor: appTheme,
-    dropdownMenuTitleActiveTextColor: appTheme,
-    notifyPrimaryBackground: appTheme,
-    circleColor: appTheme,
-    noticeBarBackground: lightenStr,
-    noticeBarTextColor: darkenStr,
-    progressColor: appTheme,
-    progressPivotBackground: appTheme,
-    stepActiveColor: appTheme,
-    stepFinishLineColor: appTheme,
-    swipeIndicatorActiveBackground: appTheme,
-    tagPrimaryColor: appTheme,
-    navBarIconColor: appTheme,
-    navBarTextColor: appTheme,
-    paginationItemDefaultColor: appTheme,
-    sidebarSelectedBorderColor: appTheme,
-    tabsDefaultColor: appTheme,
-    tabsBottomBarColor: appTheme,
-    tabbarItemActiveColor: appTheme,
-    treeSelectItemActiveColor: appTheme,
-  }
+function getPathMall() {
+  if (route.path.includes(PageEnum.MALL_PAGE_NAME)) { return true }
+  return false
 }
+onMounted(() => {
+  console.log("vue 1", ctx, proxy, global, instance);
+});
 
-const getTransitionName = computed(() => {
-  return unref(getIsPageAnimate) ? unref(getPageAnimateType) : undefined
-})
 </script>
 
-<style lang="less">
-@import './assets/styles/index.less';
-</style>
+<style lang="less"></style>
