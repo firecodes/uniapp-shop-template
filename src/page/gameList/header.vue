@@ -29,23 +29,6 @@
   max-width: 768px
 }
 
-.sharelist {
-  display: inline-block;
-  height: .96rem;
-  min-width: .75rem;
-  width: 100%;
-  text-indent: -9999px;
-  background: url(/dist/src/assets/images/header-member-top.png?cfc7a633981df26e1d1f8006153876ae) 0 no-repeat;
-  background-size: .49rem
-}
-
-.leftImage {
-  background-image: url(/dist/src/assets/images/common/credit-left.png?ede4a010ec12ee6a7eed1c58d9fae412) !important
-}
-
-.sharelist2 {
-  background-image: url(/dist/src/assets/images/common/credit-share.png?38360e51b3faef48b58992b89da947c7) !important
-}
 
 .show-right {
   position: fixed;
@@ -66,7 +49,6 @@
   min-width: .75rem;
   width: 100%;
   text-indent: -9999px;
-  background: url(/dist/src/assets/images/header-member-top.png?cfc7a633981df26e1d1f8006153876ae) 0 no-repeat;
   background-size: .49rem
 }
 
@@ -104,7 +86,6 @@
   height: .88rem;
   width: .66rem;
   text-indent: -9999px;
-  background: url(/dist/src/assets/images/Icon/history-ico.png?ada06e9468c3e8ff19c03e85568f6da6) .05rem no-repeat;
   background-size: .38rem
 }
 
@@ -215,7 +196,6 @@
 
 .index-header .index-header-search .text-input span {
   display: inline-block;
-  background: url(/dist/src/assets/images/search4.png?f1c7c4fe050302588bbeed8011ab1ff2) no-repeat 0;
   background-size: .33rem;
   height: .72rem;
   padding-left: .45rem
@@ -259,7 +239,6 @@
 
 .fwright {
   display: block;
-  background: url(/dist/src/assets/images/kefu/right.png?71e23107436bad81f50fe6fb70a76a48) 100% no-repeat;
   height: .5rem;
   width: .13rem;
   background-size: .13rem
@@ -292,7 +271,6 @@
 .container-ms span {
   display: inline-block;
   padding-left: .45rem;
-  background: url(/dist/src/assets/images/search4.png?f1c7c4fe050302588bbeed8011ab1ff2) no-repeat 0;
   background-size: .33rem
 }
 

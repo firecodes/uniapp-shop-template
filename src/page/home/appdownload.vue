@@ -52,7 +52,6 @@
 
 .appload-conn .appload-close .appclose {
   height: .96rem;
-  background: url(/dist/src/assets/images/coins/5173app-close.png?4b42fe779dc76c2ad7ad05cec2994911) no-repeat 50%;
   display: block;
   background-size: .36rem;
   float: left;
@@ -116,7 +115,6 @@
 .appbox-conn {
   height: 7.56rem;
   display: block;
-  background: url(/dist/src/assets/images/coins/apploadbox-bj.png?6967bf08dd3973363e7eb6667ead41d7) no-repeat 0 0;
   background-size: 100%;
   text-align: center;
   padding-top: 2.94rem
@@ -157,7 +155,6 @@
   width: 5.26rem;
   height: .88rem;
   line-height: .88rem;
-  background: url(/dist/src/assets/images/coins/appboxbtn-bj.png?7670905e4e7b55d824b466e2cbce537c) no-repeat 0 0;
   background-size: 100%
 }
 
@@ -171,7 +168,6 @@
   height: 1.22rem;
   width: .73rem;
   display: inline-block;
-  background: url(/dist/src/assets/images/coins/apploadbox-close.png?cf6a0692aaefa5c047aa4cf3e1791462) no-repeat top;
   background-size: 100%
 }
 
@@ -234,7 +230,6 @@
   position: absolute;
   width: .66rem;
   height: .66rem;
-  background: url(/dist/src/assets/images/coins/5173app-close.png?4b42fe779dc76c2ad7ad05cec2994911) no-repeat 50%;
   background-size: .36rem;
   right: 0;
   top: 0

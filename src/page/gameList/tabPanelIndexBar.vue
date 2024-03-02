@@ -9,12 +9,12 @@
         </van-list>
       </van-pull-refresh>
     </div>
-    <div class="tab-letter" style="height: 482px;"><a class="active"><span class="hot-img"></span></a> <a class="">7</a><a
-        class="">A</a><a class="">B</a><a class="">C</a><a class="">D</a><a class="">E</a><a class="">F</a><a
-        class="">G</a><a class="">H</a><a class="">J</a><a class="">K</a><a class="">L</a><a class="">M</a><a
-        class="">N</a><a class="">O</a><a class="">P</a><a class="">Q</a><a class="">R</a><a class="">S</a><a
-        class="">T</a><a class="">V</a><a class="">W</a><a class="">X</a><a class="">Y</a><a class="">Z</a><a
-        class="">元</a></div>
+    <div class="tab-letter" style="height: 482px;"><a class="active"><span class="hot-img"></span></a> <a
+        class="">7</a><a class="">A</a><a class="">B</a><a class="">C</a><a class="">D</a><a class="">E</a><a
+        class="">F</a><a class="">G</a><a class="">H</a><a class="">J</a><a class="">K</a><a class="">L</a><a
+        class="">M</a><a class="">N</a><a class="">O</a><a class="">P</a><a class="">Q</a><a class="">R</a><a
+        class="">S</a><a class="">T</a><a class="">V</a><a class="">W</a><a class="">X</a><a class="">Y</a><a
+        class="">Z</a><a class="">元</a></div>
     <a href="/vue/gameList/2">
       <div class="tab-more border-top"><a class="more f30 color-666">更多游戏</a></div>
     </a>
@@ -186,7 +186,6 @@ ul li {
 
 .index-header .index-header-search .text-input span {
   display: inline-block;
-  background: url(/dist/src/assets/images/search4.png?f1c7c4fe050302588bbeed8011ab1ff2) no-repeat 0;
   background-size: .33rem;
   height: .72rem;
   padding-left: .45rem

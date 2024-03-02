@@ -133,7 +133,6 @@
 }
 
 .record-conn .demolist .mbgmes-ico {
-  background: url(/dist/src/assets/images/index/mbgmes-ico.png?98e7237e31b080265c3d9a5088468c88) no-repeat 100%;
   background-size: .16rem
 }
 
@@ -160,7 +159,6 @@
   width: 80%;
   height: 100%;
   position: absolute;
-  background: url(/dist/src/assets/images/common/sell-out.png?7f368da774af4e941ebe72a2b9622ba2) no-repeat 62%;
   background-size: 1.85rem 1.14rem;
   left: 0;
   top: 0
