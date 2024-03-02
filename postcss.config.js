@@ -44,16 +44,16 @@ export default {
   plugins: [
     autoprefixer(),
     viewport({
-      ...baseViewportOpts,
+      //...baseViewportOpts,
       // 只将 vant 转为 375 设计稿的 viewport，其它样式的视图宽度为 750
       // viewportWidth: file => (file.includes('node_modules/vant/') ? 375 : 750),
     }),
-    // {
-    //   "postcss-pxtorem": {
-    //     rootValue: 37.5, // Vant 官方根字体大小是 37.5
-    //     propList: ['*'],
-    //     selectorBlackList: ['.norem'] // 过滤掉.norem-开头的class，不进行rem转换
-    //   }
-    // }
+    {
+      "postcss-pxtorem": {
+        rootValue: 37.5, // Vant 官方根字体大小是 37.5
+        propList: ['*'],
+        selectorBlackList: ['.norem'] // 过滤掉.norem-开头的class，不进行rem转换
+      }
+    }
   ],
 }
