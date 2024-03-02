@@ -689,3 +689,55 @@
 
 
 
+
+.fixed-top {
+  position: fixed !important;
+  top: 0;
+  max-width: 768px;
+  width: 100%
+}
+
+.fixed-bottom {
+  position: fixed !important;
+  bottom: 0;
+  max-width: 768px;
+  width: 100%;
+  left: 50%;
+  margin-left: -50%
+}
+
+.fixed-bottom01 {
+  position: fixed !important;
+  bottom: 0;
+  max-width: 768px;
+  width: 100%
+}
+.maskdiv0 {
+  z-index: 60;
+  filter: alpha(opacity=0);
+  opacity: 0
+}
+
+.maskdiv {
+  z-index: 60;
+  filter: alpha(opacity=70);
+  opacity: .75
+}
+
+.maskdiv4 {
+  z-index: 99;
+  filter: alpha(opacity=90);
+  opacity: .9
+}
+
+.maskdiv0,.maskdiv,.maskdiv4 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block
+}

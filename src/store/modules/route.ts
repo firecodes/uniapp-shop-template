@@ -5,6 +5,7 @@ import { store } from '@/store'
 export interface IRouteState {
   menus: RouteRecordRaw[]
   routers: RouteRecordRaw[]
+  mallMenus: RouteRecordRaw[]
   keepAliveComponents: string[]
 }
 
@@ -12,6 +13,7 @@ export const useRouteStore = defineStore({
   id: 'app-route',
   state: (): IRouteState => ({
     menus: [],
+    mallMenus: [],
     routers: [],
     keepAliveComponents: [],
   }),
@@ -26,6 +28,9 @@ export const useRouteStore = defineStore({
     },
     setMenus(menus: RouteRecordRaw[]) {
       this.menus = menus
+    },
+    setMallMenus(menus: RouteRecordRaw[]) {
+      this.mallMenus = menus
     },
     setKeepAliveComponents(compNames: string[]) {
       // 设置需要缓存的组件

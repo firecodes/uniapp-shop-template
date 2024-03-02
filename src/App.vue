@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="wrapper">
     <template v-if="getPathMall()">
       <MallApp></MallApp>
     </template>

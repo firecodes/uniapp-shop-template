@@ -7,34 +7,35 @@ const routeModuleList: Array<RouteRecordRaw> = [{
   redirect: '/vue/index',
   component: Layout,
   meta: {
-    title: '首页',
-    icon: 'wap-home',
+    hiddenHeader: true
   },
   children: [{
     path: 'index',
     name: 'vueHome',
-    meta: { keepAlive: false, },
-    component: () => import('@/views/dashboard/index.vue'),
+    meta: {
+      title: '首页', icon: 'wap-home', innerPage: true, keepAlive: false, hiddenHeader: true
+    },
+    component: () => import('@/page/home/index.vue'),
   }, {
     path: '/vue/gameList',
     name: 'gameList',
-    meta: { keepAlive: false, },
-    component: () => import('@/views/dashboard/index.vue'),
+    meta: { title: '我要买', icon: 'wap-home', innerPage: true, keepAlive: false, hiddenHeader: true },
+    component: () => import('@/page/gameList/index.vue'),
   }, {
     path: '/vue/sell-home',
     name: 'sell-home',
-    meta: { keepAlive: false, },
-    component: () => import('@/views/dashboard/index.vue'),
+    meta: { title: '首页', icon: 'wap-home', innerPage: true, keepAlive: false, hiddenHeader: true },
+    component: () => import('@/page/sell-home/index.vue'),
   }, {
     path: '/vue/message',
     name: 'message',
-    meta: { keepAlive: false, },
-    component: () => import('@/views/dashboard/index.vue'),
+    meta: { title: '消息', icon: 'wap-home', innerPage: true, keepAlive: false, hiddenHeader: true },
+    component: () => import('@/page/message/index.vue'),
   }, {
     path: '/vue/center',
     name: 'center',
-    meta: { keepAlive: false, },
-    component: () => import('@/views/dashboard/index.vue'),
+    meta: { title: '我的', icon: 'wap-home', innerPage: true, keepAlive: false, },
+    component: () => import('@/page/center/index.vue'),
   }]
 }]
 export default routeModuleList

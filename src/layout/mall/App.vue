@@ -27,4 +27,6 @@ const getTransitionName = computed(() => {
 })
 </script>
 
-<style lang="less"></style>
+<style lang="less">
+@import '@/assets/mall/index.less';
+</style>

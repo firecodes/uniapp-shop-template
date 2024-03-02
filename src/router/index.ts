@@ -15,6 +15,7 @@ const emptyRouter: any = []
 //  constantRouter.concat(...routeModuleList).concat(...routeMallList)
 const routeStore = useRouteStoreWidthOut()
 routeStore.setMenus(routeModuleList)
+routeStore.setMallMenus(routeMallList)
 routeStore.setRouters(allRouter)
 
 const router = createRouter({
