@@ -15,24 +15,12 @@ import 'vant/es/dialog/style'
 import { createApp } from 'vue'
 import App from './App.vue'
 import i18n from '@/lang/index'
-import router, { setupRouter } from '@/router'
-import { setupStore } from '@/store'
-import { updateDarkSign } from '@/utils/theme'
+
 
 async function bootstrap() {
   const app = createApp(App)
-  // 挂载状态管理
-  setupStore(app)
-  // 挂载路由
-  setupRouter(app)
-  await router.isReady()
   // 路由准备就绪后挂载APP实例
   app.use(i18n).mount('#app', true)
-
-  // 根节点挂载 dark 标识
-  const appDesignSetting = window.localStorage.getItem('DESIGN-SETTING')
-  const darkMode = appDesignSetting && JSON.parse(appDesignSetting).darkMode
-  updateDarkSign(darkMode)
 }
 
 void bootstrap()
