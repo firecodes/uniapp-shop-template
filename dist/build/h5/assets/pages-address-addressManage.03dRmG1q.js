@@ -1,0 +1,1 @@
+import{c as t,e as a,w as c,j as n,i as o}from"./index.1709504550178.js";import{_ as s}from"./plugin-vueexport-helper.DlAUqK2U.js";const r={};function _(i,d){const e=n;return t(),a(e,null,{default:c(()=>[o(" 页面模板,新建pages,将此页面内容复制粘贴到新建.vue文件 ")]),_:1})}const u=s(r,[["render",_]]);export{u as default};
