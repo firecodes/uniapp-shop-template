@@ -16,16 +16,18 @@ export function getStorageShortName() {
 }
 
 export function getAppEnvConfig() {
-  const ENV_NAME = 'vantMobile'
+  // const ENV_NAME = 'vantMobile'
 
   // Get the global configuration (the configuration will be extracted independently when packaging)
-  const ENV = (import.meta.env.DEV
-    ? (import.meta.env as unknown as GlobEnvConfig)
-    : window[ENV_NAME as any]) as unknown as GlobEnvConfig
-
+  // const ENV = (import.meta.env.DEV
+  //   ? (import.meta.env as unknown as GlobEnvConfig)
+  //   : window[ENV_NAME as any]) as unknown as GlobEnvConfig
+  const ENV = import.meta.env || {}
+  // const S = {"VITE_USE_MOCK":"true","VITE_PUBLIC_PATH":"/","VITE_DROP_CONSOLE":"true","VITE_GLOB_API_URL":"","VITE_GLOB_UPLOAD_URL":"","VITE_GLOB_IMG_URL":"","VITE_GLOB_API_URL_PREFIX":"/api","VITE_BUILD_COMPRESS":"none","VITE_BUILD_COMPRESS_DELETE_ORIGIN_FILE":"false","BASE_URL":"./","MODE":"production","DEV":false,"PROD":true,"SSR":false} || {};
+  // console.log("import.meta.env:", ENV)
   const {
-    VITE_GLOB_APP_TITLE = 'vantMobile',
-    VITE_GLOB_APP_TITLE_CN = 'vue3-vant4-mobile',
+    VITE_GLOB_APP_TITLE,
+    VITE_GLOB_APP_TITLE_CN,
     VITE_GLOB_API_URL,
     VITE_GLOB_APP_SHORT_NAME,
     VITE_GLOB_API_URL_PREFIX,
@@ -39,8 +41,7 @@ export function getAppEnvConfig() {
       `VITE_GLOB_APP_SHORT_NAME Variables can only be characters/underscores, please modify in the environment variables and re-running.`,
     )
   }
-
-  return {
+  let config = {
     VITE_GLOB_APP_TITLE,
     VITE_GLOB_APP_TITLE_CN,
     VITE_GLOB_API_URL,
@@ -50,6 +51,8 @@ export function getAppEnvConfig() {
     VITE_GLOB_PROD_MOCK,
     VITE_GLOB_IMG_URL,
   }
+  console.log("getAppEnvConfig : config", config)
+  return config
 }
 
 /**
