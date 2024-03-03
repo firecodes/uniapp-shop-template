@@ -221,7 +221,7 @@ onHide(() => {
         line-height: 56upx;
         text-align: center;
         font-size: 28upx;
-        color: $font-color-base;
+        // color: $font-color-base;
         border-radius: 20px;
         background: rgba(255, 255, 255, .6);
     }
@@ -350,8 +350,8 @@ page {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: $font-sm + 2upx;
-        color: $font-color-dark;
+        font-size: 12upx;
+        // color: $font-color-dark;
     }
 
     /* 原图标颜色太深,不想改图了,所以加了透明度 */
@@ -394,8 +394,8 @@ page {
         }
 
         .tip {
-            font-size: $font-base;
-            color: $font-color-light;
+            // font-size: $font-base;
+            // color: $font-color-light;
             margin: 0 20upx 0 40upx;
         }
 
@@ -406,15 +406,15 @@ page {
             text-align: center;
             line-height: 36upx;
             margin-right: 14upx;
-            font-size: $font-sm+2upx;
+            // font-size: $font-sm+2upx;
             color: #fff;
             border-radius: 2px;
             background: rgba(0, 0, 0, .8);
         }
 
         .icon-you {
-            font-size: $font-lg;
-            color: $font-color-light;
+            // font-size: $font-lg;
+            // color: $font-color-light;
             flex: 1;
             text-align: right;
         }
@@ -432,8 +432,8 @@ page {
     .floor-item {
         width: 150upx;
         margin-right: 20upx;
-        font-size: $font-sm+2upx;
-        color: $font-color-dark;
+        // font-size: $font-sm+2upx;
+        // color: $font-color-dark;
         line-height: 1.8;
 
         image {
@@ -443,7 +443,7 @@ page {
         }
 
         .price {
-            color: $uni-color-primary;
+            // color: $uni-color-primary;
         }
     }
 }
@@ -469,20 +469,20 @@ page {
     }
 
     .tit {
-        font-size: $font-lg +2upx;
-        color: #font-color-dark;
+        // font-size: $font-lg +2upx;
+        // color: #font-color-dark;
         line-height: 1.3;
     }
 
-    .tit2 {
-        font-size: $font-sm;
-        color: $font-color-light;
-    }
+    // .tit2 {
+    //     font-size: $font-sm;
+    //     color: $font-color-light;
+    // }
 
-    .icon-you {
-        font-size: $font-lg +2upx;
-        color: $font-color-light;
-    }
+    // .icon-you {
+    //     font-size: $font-lg +2upx;
+    //     color: $font-color-light;
+    // }
 }
 
 /* 团购楼层 */
@@ -532,19 +532,19 @@ page {
 
     .t-box {
         height: 160upx;
-        font-size: $font-base+2upx;
-        color: $font-color-dark;
+        // font-size: $font-base+2upx;
+        // color: $font-color-dark;
         line-height: 1.6;
     }
 
     .price {
-        color: $uni-color-primary;
+        // color: $uni-color-primary;
     }
 
     .m-price {
-        font-size: $font-sm+2upx;
-        text-decoration: line-through;
-        color: $font-color-light;
+        // font-size: $font-sm+2upx;
+        // text-decoration: line-through;
+        // color: $font-color-light;
         margin-left: 8upx;
     }
 
@@ -552,8 +552,8 @@ page {
         display: flex;
         align-items: center;
         margin-top: 10upx;
-        font-size: $font-sm;
-        color: $font-base;
+        // font-size: $font-sm;
+        // color: $font-base;
         padding-right: 10upx;
     }
 
@@ -583,7 +583,7 @@ page {
             top: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(rgba(255, 255, 255, .06) 30%, #f8f8f8);
+            //  background: linear-gradient(rgba(255, 255, 255, .06) 30%, #f8f8f8);
         }
     }
 
@@ -613,8 +613,8 @@ page {
     .floor-item {
         width: 180upx;
         margin-right: 20upx;
-        font-size: $font-sm+2upx;
-        color: $font-color-dark;
+        // font-size: $font-sm+2upx;
+        // color: $font-color-dark;
         line-height: 1.8;
 
         image {
@@ -624,7 +624,7 @@ page {
         }
 
         .price {
-            color: $uni-color-primary;
+            // color: $uni-color-primary;
         }
     }
 
@@ -638,8 +638,8 @@ page {
         height: 180upx;
         border-radius: 6upx;
         background: #f3f3f3;
-        font-size: $font-base;
-        color: $font-color-light;
+        // font-size: $font-base;
+        // color: $font-color-light;
 
         text:first-child {
             margin-bottom: 4upx;
@@ -679,14 +679,14 @@ page {
     }
 
     .title {
-        font-size: $font-lg;
-        color: $font-color-dark;
+        // font-size: $font-lg;
+        // color: $font-color-dark;
         line-height: 80upx;
     }
 
     .price {
-        font-size: $font-lg;
-        color: $uni-color-primary;
+        // font-size: $font-lg;
+        // color: $uni-color-primary;
         line-height: 1;
     }
 }

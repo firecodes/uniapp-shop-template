@@ -246,7 +246,7 @@ const coverTouchend = () => {
     flex-direction: column;
     color: #f7d680;
     height: 240upx;
-    background: linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+    // background: linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
     border-radius: 16upx 16upx 0 0;
     overflow: hidden;
     position: relative;
@@ -271,7 +271,7 @@ const coverTouchend = () => {
         font-size: 22upx;
         color: #36343c;
         border-radius: 20px;
-        background: linear-gradient(left, #f9e6af, #ffd465);
+        // background: linear-gradient(left, #f9e6af, #ffd465);
         z-index: 1;
     }
 
