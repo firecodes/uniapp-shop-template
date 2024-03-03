@@ -10,8 +10,8 @@ Uniapp vue3 ts axios uni view
 -   [vite-plugin-uni-components](ttps://github.com/uni-helper/vite-plugin-uni-components)
 
 #  uni-preset-vue 创建项目模板
-
-    
+   pnpn add axios@0.26.0  axios-miniprogram-adapter
+   
 # 本项目小程序 扫描
  <img src="./static/wxapp.png" >
  接口 涉及跨越问题，只能本地环境调用，并查看调用接口效果

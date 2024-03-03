@@ -1,9 +1,8 @@
 {
-    "pages": [
-        {
-            "name": "Home",
-            "path": "pages/index/index",
-            ,
+	"pages": [
+		{
+			"name": "Home",
+			"path": "pages/index/index",
 			"style": {
 				// #ifdef MP 
 				"navigationBarTitleText": "有来小店",
@@ -19,7 +18,8 @@
 							"disabled": true,
 							"placeholderColor": "#606266"
 						},
-						"buttons": [{
+						"buttons": [
+							{
 								"fontSrc": "/static/yticon.ttf",
 								"text": "\ue60d",
 								"fontSize": "26",
@@ -39,16 +39,18 @@
 					}
 				}
 			},
-            "meta": {
-                "ignoreAuth": true,
-                "tabBar": true
-            }
-        }, {
+			"meta": {
+				"ignoreAuth": true,
+				"tabBar": true
+			}
+		},
+		{
 			"path": "pages/cart/cart",
 			"style": {
 				"navigationBarTitleText": "购物车"
 			}
-		}, {
+		},
+		{
 			"path": "pages/login/login",
 			"style": {
 				"navigationBarTitleText": "",
@@ -58,12 +60,14 @@
 					"animationType": "slide-in-bottom"
 				}
 			}
-		}, {
+		},
+		{
 			"path": "pages/user/user",
 			"style": {
 				"navigationBarTitleText": "我的"
 			}
-		}, {
+		},
+		{
 			"path": "pages/detail/detail",
 			"style": {
 				"navigationBarTitleText": "",
@@ -73,7 +77,8 @@
 					}
 				}
 			}
-		}, {
+		},
+		{
 			"path": "pages/order/order",
 			"style": {
 				"navigationBarTitleText": "我的订单",
@@ -81,25 +86,30 @@
 					"bounce": "none"
 				}
 			}
-		}, {
+		},
+		{
 			"path": "pages/money/money",
 			"style": {}
-		}, {
+		},
+		{
 			"path": "pages/order/createOrder",
 			"style": {
 				"navigationBarTitleText": "创建订单"
 			}
-		}, {
+		},
+		{
 			"path": "pages/address/address",
 			"style": {
 				"navigationBarTitleText": "收货地址"
 			}
-		}, {
+		},
+		{
 			"path": "pages/address/addressManage",
 			"style": {
 				"navigationBarTitleText": ""
 			}
-		}, {
+		},
+		{
 			"path": "pages/money/pay",
 			"style": {
 				"navigationBarTitleText": "支付"
@@ -110,12 +120,14 @@
 			"style": {
 				"navigationBarTitleText": "支付成功"
 			}
-		}, {
+		},
+		{
 			"path": "pages/notice/notice",
 			"style": {
 				"navigationBarTitleText": "通知"
 			}
-		}, {
+		},
+		{
 			"path": "pages/category/category",
 			"style": {
 				"navigationBarTitleText": "分类",
@@ -123,116 +135,116 @@
 					"bounce": "none"
 				}
 			}
-		}, {
+		},
+		{
 			"path": "pages/product/list",
 			"style": {
 				"enablePullDownRefresh": true,
 				"navigationBarTitleText": "商品列表"
 			}
 		},
-
-
-        {
-            "name": "Demo",
-            "path": "pages/demo/index",
-            "style": {
-                "navigationBarTitleText": "Demo"
-            },
-            "meta": {
-                "tabBar": true
-            }
-        },
-        {
-            "name": "About",
-            "path": "pages/about/index",
-            "style": {
-                "navigationBarTitleText": "关于"
-            },
-            "meta": {
-                "ignoreAuth": true,
-                "tabBar": true
-            }
-        },
-        {
-            "name": "Login",
-            "path": "pages/login/index",
-            "style": {
-                "navigationBarTitleText": "登录"
-            },
-            "meta": {
-                "ignoreAuth": true
-            }
-        },
-        {
-            "name": "Log",
-            "path": "pages/log/index",
-            "style": {
-                "navigationBarTitleText": "日志"
-            }
-        },
-        {
-            "name": "NotFound",
-            "path": "pages/notFound/404",
-            "style": {
-                "navigationBarTitleText": "Not Found"
-            },
-            "meta": {
-                "ignoreAuth": true
-            }
-        }
-    ],
-    "subPackages": [
-        {
-            "root": "pagesA",
-            "pages": [
-                {
-                    "path": "list/test1/index",
-                    "style": {
-                        "navigationBarTitleText": "test1"
-                    },
-                    "meta": {
-                        "ignoreAuth": true
-                    }
-                },
-                {
-                    "path": "list/test2/index",
-                    "style": {
-                        "navigationBarTitleText": "test2",
-                        "navigationStyle": "custom"
-                    },
-                    "meta": {
-                        "ignoreAuth": true
-                    }
-                }
-            ]
-        },
-        {
-            "root": "pagesB",
-            "pages": [
-                {
-                    "path": "detail/index",
-                    "style": {
-                        "navigationBarTitleText": "Detail"
-                    },
-                    "meta": {
-                        "ignoreAuth": true
-                    }
-                }
-            ]
-        }
-    ],
+		{
+			"name": "Demo",
+			"path": "pages/demo/index",
+			"style": {
+				"navigationBarTitleText": "Demo"
+			},
+			"meta": {
+				"tabBar": true
+			}
+		},
+		{
+			"name": "About",
+			"path": "pages/about/index",
+			"style": {
+				"navigationBarTitleText": "关于"
+			},
+			"meta": {
+				"ignoreAuth": true,
+				"tabBar": true
+			}
+		},
+		{
+			"name": "Login",
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			},
+			"meta": {
+				"ignoreAuth": true
+			}
+		},
+		{
+			"name": "Log",
+			"path": "pages/log/index",
+			"style": {
+				"navigationBarTitleText": "日志"
+			}
+		},
+		{
+			"name": "NotFound",
+			"path": "pages/notFound/404",
+			"style": {
+				"navigationBarTitleText": "Not Found"
+			},
+			"meta": {
+				"ignoreAuth": true
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pagesA",
+			"pages": [
+				{
+					"path": "list/test1/index",
+					"style": {
+						"navigationBarTitleText": "test1"
+					},
+					"meta": {
+						"ignoreAuth": true
+					}
+				},
+				{
+					"path": "list/test2/index",
+					"style": {
+						"navigationBarTitleText": "test2",
+						"navigationStyle": "custom"
+					},
+					"meta": {
+						"ignoreAuth": true
+					}
+				}
+			]
+		},
+		{
+			"root": "pagesB",
+			"pages": [
+				{
+					"path": "detail/index",
+					"style": {
+						"navigationBarTitleText": "Detail"
+					},
+					"meta": {
+						"ignoreAuth": true
+					}
+				}
+			]
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "有来小店",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#f8f8f8"
-	},    
-    "tabBar": {
+	},
+	"tabBar": {
 		"color": "#C0C4CC",
 		"selectedColor": "#fa436a",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
-		"list": [{
+		"list": [
+			{
 				"pagePath": "pages/index/index",
 				"iconPath": "static/tab-home.png",
 				"selectedIconPath": "static/tab-home-current.png",
