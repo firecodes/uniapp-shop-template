@@ -6,6 +6,7 @@
 
 -   [uniapp-vue3-vite-ts-template](https://gitee.com/h_mo/uniapp-vue3-vite-ts-template)
 -   [nuitui-uniapp](https://github.com/nutui-uniapp/nutui-uniapp)
+-   [nutui-uniapp-demo](https://github.com/nutui-uniapp/nutui-uniapp-demo)
 -   [vite-plugin-uni-components](ttps://github.com/uni-helper/vite-plugin-uni-components)
 
 # 导入基础模板
