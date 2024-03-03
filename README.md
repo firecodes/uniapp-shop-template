@@ -11,6 +11,9 @@
 
 #  uni-preset-vue 创建项目模板
 
+# 本项目小程序 扫描
+ <img src="./static/wxapp.png" >
+
 
 # 导入基础模板
 
