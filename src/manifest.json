@@ -1,6 +1,6 @@
 {
     "name" : "uniapp_vue3_vite_ts",
-    "appid" : "__UNI__4350F4E",
+    "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -61,7 +61,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxc8e4923d551cd4a4",
+        "appid" : "wxe5cf453868fb6c3b",
         "setting" : {
             "urlCheck" : false,
             "es6" : true,
