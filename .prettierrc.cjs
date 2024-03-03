@@ -7,9 +7,9 @@ module.exports = {
     /**在所有代码语句的末尾添加分号 */
     semi: true,
     /**使用 4 个空格缩进 */
-    tabWidth: 4,
+    tabWidth: 2,
     /**每行最多 160 字符 */
-    printWidth: 160,
+    printWidth: 200,
     /**指定文件的结尾换行符 */
     endOfLine: 'auto',
     /**使用单引号代替双引号 */

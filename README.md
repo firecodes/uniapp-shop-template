@@ -9,6 +9,9 @@
 -   [nutui-uniapp-demo](https://github.com/nutui-uniapp/nutui-uniapp-demo)
 -   [vite-plugin-uni-components](ttps://github.com/uni-helper/vite-plugin-uni-components)
 
+#  uni-preset-vue 创建项目模板
+
+
 # 导入基础模板
 
 通过 HBuilderX 导入项目 https://gitee.com/h_mo/uniapp-vue3-vite-ts-template

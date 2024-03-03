@@ -6,6 +6,9 @@ import Unocss from 'unocss/vite';
 import TransformPages from 'uni-read-pages-vite'; // vite.config.ts
 import AutoImport from 'unplugin-auto-import/vite';
 
+const INVALID_CHAR_REGEX = /[\u0000-\u001F"#$&*+,:;<=>?[\]^`{|}\u007F]/g
+const DRIVE_LETTER_REGEX = /^[a-z]:/i
+
 export default ({ mode }: ConfigEnv): UserConfig => {
     const root = process.cwd();
     const env = loadEnv(mode, root);
@@ -43,8 +46,10 @@ export default ({ mode }: ConfigEnv): UserConfig => {
         },
         // 构建配置
         build: {
-            outDir: 'dist',
+            // outDir: 'dist',
+            outDir: 'dist-uniapp-template',
             chunkSizeWarningLimit: 1500,
+            // sourcemap: false,
             rollupOptions: {
                 output: {
                     entryFileNames: `assets/[name].${new Date().getTime()}.js`,
@@ -55,6 +60,15 @@ export default ({ mode }: ConfigEnv): UserConfig => {
                     //     vue: ['vue', 'vue-router', 'vuex'],
                     //     echarts: ['echarts'],
                     // },
+                    // TODO: 处理GitHub Pages 部署 _plugin-vue_export-helper.js 404
+                    // https://github.com/rollup/rollup/blob/master/src/utils/sanitizeFileName.ts
+                    sanitizeFileName(name: any) {
+                        const match = DRIVE_LETTER_REGEX.exec(name)
+                        const driveLetter = match ? match[0] : ''
+                        // A `:` is only allowed as part of a windows drive letter (ex: C:\foo)
+                        // Otherwise, avoid them because they can refer to NTFS alternate data streams.
+                        return driveLetter + name.slice(driveLetter.length).replace(INVALID_CHAR_REGEX, '')
+                    },
                 },
             },
         },

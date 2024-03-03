@@ -1,10 +1,11 @@
 {
     "name": "uniapp_vue3_vite_ts",
-    "version": "1.3.1",
+    "version": "0.0.0",
     "scripts": {
         "dev:app": "uni -p app",
         "dev:custom": "uni -p",
         "dev:h5": "uni",
+        "dev:h5:prop": "uni --mode=production",
         "dev:h5:ssr": "uni --ssr",
         "dev:mp-alipay": "uni -p mp-alipay",
         "dev:mp-baidu": "uni -p mp-baidu",
