@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "rimraf dist-vant-template && vite build",
     "tsc": "vue-tsc --noEmit",
     "preview": "vite preview"
   },
@@ -19,6 +19,7 @@
     "axios": "^1.2.6",
     "better-scroll": "2.3.0",
     "date-fns": "^3.0.6",
+    "dayjs": "1.11.9",
     "echarts": "^5.4.3",
     "js-md5": "^0.7.3",
     "lib-flexible": "^0.3.2",
@@ -29,6 +30,7 @@
     "qs": "^6.11.2",
     "vant": "^4.8.1",
     "vue": "^3.2.45",
+    "vue-i18n": "9.2.2",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
@@ -48,6 +50,7 @@
     "eslint-plugin-format": "^0.1.0",
     "eslint-plugin-vue": "^9.22.0",
     "fs-extra": "^11.2.0",
+    "rimraf": "^5.0.0",
     "less": "^4.2.0",
     "postcss": "^8.4.32",
     "postcss-html": "^1.5.0",
@@ -58,6 +61,8 @@
     "sass": "^1.54.4",
     "typescript": "^4.6.4",
     "unocss": "^0.58.5",
+    "unplugin-auto-import": "^0.15.3",
+    "unplugin-icons": "^0.16.1",
     "unplugin-vue-components": "^0.25.2",
     "vite": "^4.4.9",
     "vite-plugin-compression": "^0.5.1",

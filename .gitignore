@@ -11,9 +11,12 @@ package-lock.json*
 node_modules
 dist
 dist-ssr
+dist-mall
 src-h5
 src-ts
 *.local
+dist-vant-template
+
 
 # Editor directories and files
 .vscode/*

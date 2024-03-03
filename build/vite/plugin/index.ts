@@ -5,6 +5,7 @@ import { configMockPlugin } from './mock'
 import { configCompressPlugin } from './compress'
 // import { configVisualizerConfig } from './visualizer'
 import { configSvgIconsPlugin } from './svgSprite'
+import { setupBuild } from './setupBuild'
 
 // /**
 //  * 配置 vite 插件
@@ -57,5 +58,4 @@ import { configSvgIconsPlugin } from './svgSprite'
 //   return vitePlugins
 // }
 
-
-export { configSvgIconsPlugin, configMockPlugin, configCompressPlugin }
+export { configSvgIconsPlugin, configMockPlugin, configCompressPlugin, setupBuild }
