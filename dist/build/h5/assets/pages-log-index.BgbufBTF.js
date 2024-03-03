@@ -1,0 +1,1 @@
+import{d as t,q as n,c as a,e as s,w as c,i as r,j as _}from"./index.1709508483504.js";const p=t({__name:"index",setup(i){return n(e=>{console.log("log onLoad query",e)}),(e,l)=>{const o=_;return a(),s(o,{style:{"line-height":"88rpx","text-align":"center"}},{default:c(()=>[r("登录后访问log")]),_:1})}}});export{p as default};
