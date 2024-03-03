@@ -11,6 +11,9 @@
 
 #  uni-preset-vue 创建项目模板
 
+    "axios": "0.21.1",
+    "axios-miniprogram-adapter": "0.3.2",
+    
 # 本项目小程序 扫描
  <img src="./static/wxapp.png" >
 

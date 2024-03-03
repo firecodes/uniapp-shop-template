@@ -1,6 +1,7 @@
 import { createSSRApp } from 'vue';
 import App from './App.vue';
 import 'uno.css';
+import '@/uni.scss';
 import { setupStore } from '@/state';
 import { setupRouter } from '@/router';
 
