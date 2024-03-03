@@ -1,4 +1,4 @@
-<h1 align="center">vue3-vant4-mobile</h1>
+Uniapp vue3 ts axios uni view
 
 ## 介绍
  H5 模板，参考H5网站，用的ui组件，后续根据相关网站做一些网页
@@ -11,12 +11,10 @@
 
 #  uni-preset-vue 创建项目模板
 
-    "axios": "0.21.1",
-    "axios-miniprogram-adapter": "0.3.2",
     
 # 本项目小程序 扫描
  <img src="./static/wxapp.png" >
-
+ 接口 涉及跨越问题，只能本地环境调用，并查看调用接口效果
 
 # 导入基础模板
 
