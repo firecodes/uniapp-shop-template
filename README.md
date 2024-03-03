@@ -1,51 +1,134 @@
-<h1 align="center">vue3-vant4-mobile</h1>
+# 项目依赖
 
-## 介绍
- H5 模板，参考H5网站，用的ui组件，后续根据相关网站做一些网页
+-   [uniapp-vue3-vite-ts-template](https://gitee.com/h_mo/uniapp-vue3-vite-ts-template)
+-   [nuitui-uniapp](https://github.com/nutui-uniapp/nutui-uniapp)
+-   [vite-plugin-uni-components](ttps://github.com/uni-helper/vite-plugin-uni-components)
 
-# 网站(H5)
-1. 游戏交易商城 ( https://m.5173.com/ )  --ui 组件 vant
-2. 移动积分商城 ( https://m.jf.10086.cn/ )  -- taro
-3. 游戏交易商城2 ( https://m1.pxb7.com/pages/buy/index) --- uniapp 小程序
+# 导入基础模板
 
-# 分支版本 搭建H5项目版本
-1. -ui 组件 vant ( https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-tempalte )
-1. mall-demo vant ( https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo )
-1. mall-demo2 vant ( https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo2 )
+通过 HBuilderX 导入项目 https://gitee.com/h_mo/uniapp-vue3-vite-ts-template
 
+![image-20240226233320600](https://s2.loli.net/2024/02/27/YWOXUausmLcTS7B.png)
 
+# 模板整合 nutui
 
-## Project setup
-```
-pnpm install
-```
+参考文档：https://nutui-uniapp.netlify.app/guide/quick-start.html
 
-### Compiles and hot-reloads for development
-```
-pnpm dev
+## npm 安装
+
+```bash
+pnpm add nutui-uniapp
 ```
 
-### Compiles and minifies for production
+## 组件 TS 类型支持
+
+在 tsconfig.json 中通过 compilerOptions.type 指定全局组件类型。
+
+```json
+// tsconfig.json
+{
+    "compilerOptions": {
+        // ...
+        "types": ["nutui-uniapp/global.d.ts"]
+    }
+}
 ```
-pnpm build
+
+## 自动导入
+
+安装 vite-plugin-uni-components， [安装和使用说明](https://github.com/uni-helper/vite-plugin-uni-components)
+
+```bash
+pnpm i -D @uni-helper/vite-plugin-uni-components
 ```
 
+配置 vite.config.ts
 
-### 参考资料
-1. https://github.com/youlaitech/mall-app   （uniapp ）
-2. https://github.com/xiangshu233/vue3-vant4-mobile  （vant）
-3. https://github.com/newbee-ltd/newbee-mall-vue3-app （ vant）
+```typescript
+// Vite中文网：https://vitejs.cn/config/
+import { ConfigEnv, loadEnv, UserConfig } from 'vite';
+import { resolve } from 'path';
+import uni from '@dcloudio/vite-plugin-uni';
+import Components from '@uni-helper/vite-plugin-uni-components';
+import { NutResolver } from 'nutui-uniapp';
 
+// https://vitejs.dev/config/
+export default ({ mode }: ConfigEnv): UserConfig => {
+    const root = process.cwd();
+    const env = loadEnv(mode, root);
+    return {
+        // ...
+        plugins: [
+            // ...
+            Components({
+                resolvers: [NutResolver()],
+                dirs: ['src/components', 'src/**/components'],
+                dts: 'typings/components.d.ts',
+            }),
+            // uni 插件一定要放到后面
+            uni(),
+        ],
+    };
+};
+```
 
+> 如果你使用 `pnpm` ，请在根目录下创建一个 `.npmrc` 文件，参见[issue](https://github.com/antfu/unplugin-vue-components/issues/389)。
 
+```
+// .npmrc
+public-hoist-pattern[]=@vue*
+// or
+// shamefully-hoist = true
+```
 
+## 样式引入
 
+在项目文件 `app.vue` 文件中添加如下代码：
 
+```html
+// App.vue
+<style lang="scss">
+    @import 'nutui-uniapp/styles/index';
+</style>
+```
 
+导入样式变量
 
+```typescript
+// vite.config.ts
+import { defineConfig } from 'vite';
 
+// https://vitejs.dev/config/
+export default defineConfig({
+    // ...
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: '@import "nutui-uniapp/styles/variables.scss";',
+            },
+        },
+    },
+});
+```
 
+## 测试示例
 
+```html
+<!-- pages/index/index.vue -->
+<template>
+    <AppProvider>
+        <view class="content">
+            <nut-button type="primary"> 主要按钮 </nut-button>
+            <!-- ... -->
+        </view>
+    </AppProvider>
+</template>
+```
 
+![image-20240227003711245](https://s2.loli.net/2024/02/27/hbiwOjTMAeEUc1s.png)
 
+# UnoCSS
 
+```
+pnpm i -D @unocss/transformer-directives
+```
