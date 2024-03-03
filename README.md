@@ -1,7 +1,13 @@
-<h1 align="center">vue3-vant4-mobile</h1>
+<h1 align="center">Uniapp vue3 ts axios uni view</h1>
 
 ## 介绍
- H5 模板，参考H5网站，用的ui组件，后续根据相关网站做一些网页
+ Uniapp vue3 ts axios uni view 搭建项目模板
+
+# 访问页面效果
+<a href="https://firecodes.github.io/uniapp-shop-template/">Demo view </a>
+
+# Uniapp分支版本
+1. <a href="https://github.com/firecodes/uniapp-shop-template/tree/dev-uni-view">dev-uni-view </a>( https://github.com/firecodes/uniapp-shop-template/tree/dev-uni-view)
 
 # 网站(H5)
 1. 游戏交易商城 ( https://m.5173.com/ )  --ui 组件 vant
@@ -9,9 +15,8 @@
 3. 游戏交易商城2 ( https://m1.pxb7.com/pages/buy/index) --- uniapp 小程序
 
 # 分支版本 搭建H5项目版本
-1. -ui 组件 vant ( https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-tempalte )
-1. mall-demo vant ( https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo )
-1. mall-demo2 vant ( https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo2 )
+1.  <a href="https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-tempalte">-ui 组件 vant </a> ( https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-tempalte )
+1.  <a href=" https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo">mall-demo vant  </a>( https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo )
 
 
 
