@@ -13,6 +13,11 @@
 
 通过 HBuilderX 导入项目 https://gitee.com/h_mo/uniapp-vue3-vite-ts-template
 
+| 环境                 | 名称版本                                                     |
+| -------------------- | :----------------------------------------------------------- |
+| **开发工具**         | VSCode                                                       |
+| **运行环境**         | Node 16+                                                     |
+| **VSCode插件(必装)** | 1. `Vue Language Features (Volar) ` <br/>2. `TypeScript Vue Plugin (Volar) `  <br/>3. 禁用 Vetur <br/>4.ESLint <br/>5.Prettier  - Code formatter |
 
 # 模板整合 nutui
 
@@ -20,7 +25,7 @@
 
 ### 参考资料
 1. https://github.com/youlaitech/uniapp-nutui-template
-
+2. https://github.com/lalalalaxx/uniapp-vue-vite-ts
 
 # 网站(H5)
 1. 游戏交易商城 ( https://m.5173.com/ )  --ui 组件 vant
