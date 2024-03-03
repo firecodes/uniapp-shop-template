@@ -12,6 +12,7 @@ const DRIVE_LETTER_REGEX = /^[a-z]:/i
 export default ({ mode }: ConfigEnv): UserConfig => {
     const root = process.cwd();
     const env = loadEnv(mode, root);
+    const target = "https://api.youlai.tech"
     return {
         base: './',
         // 设置路径别名
@@ -42,6 +43,11 @@ export default ({ mode }: ConfigEnv): UserConfig => {
                     changeOrigin: true,
                     rewrite: (path) => path.replace(/^\/upload/, ''),
                 },
+                // '/mall-sms': {
+                //     target: target,
+                //     changeOrigin: true,
+                //     rewrite: (path) => path.replace(/^\/mall-sms/, ''),
+                // },
             },
         },
         // 构建配置

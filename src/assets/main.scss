@@ -1,3 +1,5 @@
+@import './mall.scss';
+
 view,
 scroll-view,
 swiper,
@@ -49,12 +51,15 @@ web-view,
 // 超出省略,最多5行
 @for $i from 1 through 5 {
     .text-ellipsis-#{$i} {
+
         // vue下，单行和多行显示省略号需要单独处理
-        @if $i == '1' {
+        @if $i=='1' {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-        } @else {
+        }
+
+        @else {
             display: -webkit-box !important;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -64,6 +69,7 @@ web-view,
         }
     }
 }
+
 page {
     background-color: #f2f2f2;
 }

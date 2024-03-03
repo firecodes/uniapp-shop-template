@@ -7,6 +7,9 @@ declare module '*.vue' {
     export default component;
 }
 
+declare module 'axios/lib/core/settle'
+declare module 'axios/lib/helpers/buildURL'
+
 interface ImportMetaEnv {
     readonly VITE_ENV: string;
     readonly VITE_APP_TITLE: string;
@@ -20,3 +23,5 @@ interface ImportMetaEnv {
 interface ImportMeta {
     readonly env: ImportMetaEnv;
 }
+
+

@@ -3,7 +3,7 @@
  * @see https://gitee.com/fant-mini/uni-mini-router
  */
 import { createRouter } from 'uni-mini-router';
-import { App } from 'vue';
+import { App } from 'vue'
 import { createRouterGuard } from '@/router/guard';
 
 const router = createRouter({
