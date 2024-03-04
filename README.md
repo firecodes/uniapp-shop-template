@@ -8,16 +8,18 @@
 
 # Uniapp分支版本
 1. <a href="https://github.com/firecodes/uniapp-shop-template/tree/dev-uni-view">dev-uni-view </a>( https://github.com/firecodes/uniapp-shop-template/tree/dev-uni-view)
+2. <a href="https://github.com/firecodes/uniapp-shop-template/tree/dev-nutui">dev-nutui </a>( https://github.com/firecodes/uniapp-shop-template/tree/dev-nutui)
 
-# 网站(H5)
+
+# H5项目分支版本
+1.  <a href="https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-ts-tempalte">ui 组件 vant </a> ( https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-ts-tempalte )
+2.  <a href="https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-tempalte">游戏商城 demo </a> ( https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-tempalte )
+3.  <a href=" https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo">mall-demo vant  </a>( https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo )
+
+# 参考网站(H5)
 1. 游戏交易商城 ( https://m.5173.com/ )  --ui 组件 vant
 2. 移动积分商城 ( https://m.jf.10086.cn/ )  -- taro
 3. 游戏交易商城2 ( https://m1.pxb7.com/pages/buy/index) --- uniapp 小程序
-
-# 分支版本 搭建H5项目版本
-1.  <a href="https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-tempalte">-ui 组件 vant </a> ( https://github.com/firecodes/uniapp-shop-template/tree/vue3-vant-tempalte )
-1.  <a href=" https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo">mall-demo vant  </a>( https://github.com/firecodes/uniapp-shop-template/tree/vue-vant-mall-demo )
-
 
 
 ## Project setup
