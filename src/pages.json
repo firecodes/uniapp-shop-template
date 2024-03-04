@@ -53,7 +53,29 @@
             "name": "About",
             "path": "pages/about/index",
             "style": {
-                "navigationBarTitleText": "关于"
+                "navigationBarTitleText": "关于我们"
+            },
+            "meta": {
+                "ignoreAuth": true,
+                "tabBar": true
+            }
+        },
+        {
+            "name": "address",
+            "path": "pages/address/index",
+            "style": {
+                "navigationBarTitleText": "地址管理"
+            },
+            "meta": {
+                "ignoreAuth": true,
+                "tabBar": true
+            }
+        },
+        {
+            "name": "addressAddEdit",
+            "path": "pages/address/addEdit",
+            "style": {
+                "navigationBarTitleText": "地址管理"
             },
             "meta": {
                 "ignoreAuth": true,
