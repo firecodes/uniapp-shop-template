@@ -1,4 +1,4 @@
-<h1 align="center">vue3-vant4-mobile</h1>
+Uniapp vue3 ts axios uni view
 
 ## 介绍
  H5 模板，参考H5网站，用的ui组件，后续根据相关网站做一些网页
@@ -8,6 +8,13 @@
 -   [nuitui-uniapp](https://github.com/nutui-uniapp/nutui-uniapp)
 -   [nutui-uniapp-demo](https://github.com/nutui-uniapp/nutui-uniapp-demo)
 -   [vite-plugin-uni-components](ttps://github.com/uni-helper/vite-plugin-uni-components)
+
+#  uni-preset-vue 创建项目模板
+   pnpn add axios@0.26.0  axios-miniprogram-adapter
+   
+# 本项目小程序 扫描
+ <img src="./static/wxapp.png" >
+ 接口 涉及跨越问题，只能本地环境调用，并查看调用接口效果
 
 # 导入基础模板
 
@@ -26,6 +33,7 @@
 ### 参考资料
 1. https://github.com/youlaitech/uniapp-nutui-template
 2. https://github.com/lalalalaxx/uniapp-vue-vite-ts
+3. https://github.com/sunpm/vitesse-uniapp-vue3
 
 # 网站(H5)
 1. 游戏交易商城 ( https://m.5173.com/ )  --ui 组件 vant
