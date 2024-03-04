@@ -1,10 +1,38 @@
 {
-    "pages": [
-        {
+    "pages": [{
             "name": "Home",
             "path": "pages/index/index",
             "style": {
                 "navigationBarTitleText": "Home"
+            },
+            "meta": {
+                "tabBar": true
+            }
+        }, {
+            "name": "category",
+            "path": "pages/category/index",
+            "style": {
+                "navigationBarTitleText": "分类"
+            },
+            "meta": {
+                "tabBar": true
+            }
+        },
+        {
+            "name": "cart",
+            "path": "pages/cart/index",
+            "style": {
+                "navigationBarTitleText": "购物车"
+            },
+            "meta": {
+                "tabBar": true
+            }
+        },
+        {
+            "name": "user",
+            "path": "pages/user/index",
+            "style": {
+                "navigationBarTitleText": "用户"
             },
             "meta": {
                 "tabBar": true
@@ -59,11 +87,9 @@
             }
         }
     ],
-    "subPackages": [
-        {
+    "subPackages": [{
             "root": "pagesA",
-            "pages": [
-                {
+            "pages": [{
                     "path": "list/test1/index",
                     "style": {
                         "navigationBarTitleText": "test1"
@@ -86,50 +112,51 @@
         },
         {
             "root": "pagesB",
-            "pages": [
-                {
-                    "path": "detail/index",
-                    "style": {
-                        "navigationBarTitleText": "Detail"
-                    },
-                    "meta": {
-                        "ignoreAuth": true
-                    }
+            "pages": [{
+                "path": "detail/index",
+                "style": {
+                    "navigationBarTitleText": "Detail"
+                },
+                "meta": {
+                    "ignoreAuth": true
                 }
-            ]
+            }]
         }
     ],
     "globalStyle": {
         "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "uni-app",
-        "navigationBarBackgroundColor": "#F2F2F2",
-        "backgroundColor": "#F2F2F2",
-        "navigationStyle": "default",
-        "renderingMode": "seperated",
-        "pageOrientation": "portrait"
+        "navigationBarTitleText": "有来小店",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "backgroundColor": "#f8f8f8"
     },
     "tabBar": {
-        "color": "#474747",
-        "selectedColor": "#9BC6FC",
-        "backgroundColor": "#F2F2F2",
-        "list": [
-            {
+        "color": "#C0C4CC",
+        "selectedColor": "#fa436a",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
                 "pagePath": "pages/index/index",
-                "text": "首页",
-                "iconPath": "static/images/tabBar/home.png",
-                "selectedIconPath": "static/images/tabBar/selectedHome.png"
+                "iconPath": "static/tab-home.png",
+                "selectedIconPath": "static/tab-home-current.png",
+                "text": "首页"
             },
             {
-                "pagePath": "pages/demo/index",
-                "text": "Demo",
-                "iconPath": "static/images/tabBar/demo.png",
-                "selectedIconPath": "static/images/tabBar/selectedDemo.png"
+                "pagePath": "pages/category/index",
+                "iconPath": "static/tab-cate.png",
+                "selectedIconPath": "static/tab-cate-current.png",
+                "text": "分类"
             },
             {
-                "pagePath": "pages/about/index",
-                "text": "关于",
-                "iconPath": "static/images/tabBar/about.png",
-                "selectedIconPath": "static/images/tabBar/selectedAbout.png"
+                "pagePath": "pages/cart/index",
+                "iconPath": "static/tab-cart.png",
+                "selectedIconPath": "static/tab-cart-current.png",
+                "text": "购物车"
+            },
+            {
+                "pagePath": "pages/user/index",
+                "iconPath": "static/tab-my.png",
+                "selectedIconPath": "static/tab-my-current.png",
+                "text": "我的"
             }
         ]
     }
