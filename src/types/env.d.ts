@@ -7,6 +7,8 @@ declare module '*.vue' {
     export default component;
 }
 
+declare module "uview-plus"
+
 interface ImportMetaEnv {
     readonly VITE_ENV: string;
     readonly VITE_APP_TITLE: string;

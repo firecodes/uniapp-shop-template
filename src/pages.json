@@ -1,20 +1,14 @@
 {
-    "pages": [
-        {
+    "custom": {
+        "^u--(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+        "^up-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+        "^u-([^-].*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+    },
+    "pages": [{
             "name": "Home",
             "path": "pages/index/index",
             "style": {
                 "navigationBarTitleText": "Home"
-            },
-            "meta": {
-                "tabBar": true
-            }
-        },
-        {
-            "name": "Demo",
-            "path": "pages/demo/index",
-            "style": {
-                "navigationBarTitleText": "Demo"
             },
             "meta": {
                 "tabBar": true
@@ -42,13 +36,6 @@
             }
         },
         {
-            "name": "Log",
-            "path": "pages/log/index",
-            "style": {
-                "navigationBarTitleText": "日志"
-            }
-        },
-        {
             "name": "NotFound",
             "path": "pages/notFound/404",
             "style": {
@@ -59,11 +46,9 @@
             }
         }
     ],
-    "subPackages": [
-        {
+    "subPackages": [{
             "root": "pagesA",
-            "pages": [
-                {
+            "pages": [{
                     "path": "list/test1/index",
                     "style": {
                         "navigationBarTitleText": "test1"
@@ -86,17 +71,15 @@
         },
         {
             "root": "pagesB",
-            "pages": [
-                {
-                    "path": "detail/index",
-                    "style": {
-                        "navigationBarTitleText": "Detail"
-                    },
-                    "meta": {
-                        "ignoreAuth": true
-                    }
+            "pages": [{
+                "path": "detail/index",
+                "style": {
+                    "navigationBarTitleText": "Detail"
+                },
+                "meta": {
+                    "ignoreAuth": true
                 }
-            ]
+            }]
         }
     ],
     "globalStyle": {
@@ -112,8 +95,7 @@
         "color": "#474747",
         "selectedColor": "#9BC6FC",
         "backgroundColor": "#F2F2F2",
-        "list": [
-            {
+        "list": [{
                 "pagePath": "pages/index/index",
                 "text": "首页",
                 "iconPath": "static/images/tabBar/home.png",

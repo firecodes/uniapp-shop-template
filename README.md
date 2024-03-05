@@ -15,6 +15,11 @@
  <img src="./static/wxapp.png" >
 
 
+pnpm add uview-plus dayjs clipboard
+pnpm add luch-request
+pnpm add axios@0.26.0 axios-miniprogram-adapter
+
+
 # 导入基础模板
 
 通过 HBuilderX 导入项目 https://gitee.com/h_mo/uniapp-vue3-vite-ts-template
