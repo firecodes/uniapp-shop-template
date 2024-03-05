@@ -23,23 +23,6 @@ const handleGetStarted = () => {
 <template>
     <AppProvider>
         <view class="content">
-            <image class="logo" src="/static/svg/LOGO.svg" />
-            <view class="text-area">
-                <text class="">{{ title }}</text>
-            </view>
-            <view class="text-area">
-                <text class="">是否是Vue3: {{ isVue3 }}</text>
-            </view>
-            <view class="text-area">
-                <text class="_u_text-red">当前平台: {{ platform }}</text>
-            </view>
-            <BasicButton @click="handleGetStarted">Get Started → </BasicButton>
-            <view class="_u_text-red">uno css</view>
-            <Iconify icon="i-ph-anchor-simple-thin" size="65" />
-            <Iconify icon="i-system-uicons-book-text" />
-            <Iconify icon="i-system-uicons-battery-full" size="65" />
-            <Iconify icon="i-system-uicons-box-add" :size="65" />
-            <Iconify icon="i-system-uicons-bell-snooze" color="red" :size="65" />
 
 
             <view style="padding: 20px;">
@@ -60,6 +43,23 @@ const handleGetStarted = () => {
                     <u-cell icon="integral-fill" title="会员等级" value="新版本"></u-cell>
                 </u-cell-group>
             </view>
+            <image class="logo" src="/static/svg/LOGO.svg" />
+            <view class="text-area">
+                <text class="">{{ title }}</text>
+            </view>
+            <view class="text-area">
+                <text class="">是否是Vue3: {{ isVue3 }}</text>
+            </view>
+            <view class="text-area">
+                <text class="_u_text-red">当前平台: {{ platform }}</text>
+            </view>
+            <BasicButton @click="handleGetStarted">Get Started → </BasicButton>
+            <view class="_u_text-red">uno css</view>
+            <Iconify icon="i-ph-anchor-simple-thin" size="65" />
+            <Iconify icon="i-system-uicons-book-text" />
+            <Iconify icon="i-system-uicons-battery-full" size="65" />
+            <Iconify icon="i-system-uicons-box-add" :size="65" />
+            <Iconify icon="i-system-uicons-bell-snooze" color="red" :size="65" />
         </view>
     </AppProvider>
 </template>

@@ -7,9 +7,6 @@ import { setupRouter } from '@/router';
 // main.js，注意要在use方法之后执行
 import uviewPlus from 'uview-plus'
 
-
-// main.js，注意要在use方法之后执行
-import uviewPlus from 'uview-plus'
 export function createApp() {
     const app = createSSRApp(App);
     // Configure router
