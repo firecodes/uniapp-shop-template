@@ -1,0 +1,1 @@
+import{G as c,K as i,c as u,A as d,x as l}from"./index.1709636774746.js";function m(t){const n=c(t,null);if(n){const e=l(),{add:r,remove:s,internalChildren:a}=n;r(e),i(()=>s(e));const o=u(()=>a.indexOf(e));return{parent:n,index:o}}return{parent:null,index:d(-1)}}export{m as u};
