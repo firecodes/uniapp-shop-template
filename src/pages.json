@@ -2,6 +2,13 @@
 	"pages": [{
 			"name": "Home",
 			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "库管系统",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			},
 			"meta": {
 				"ignoreAuth": true,
 				"tabBar": false
