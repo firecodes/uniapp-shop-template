@@ -86,7 +86,7 @@
 			"name": "addressManage",
 			"path": "pages/addressManage/index",
 			"style": {
-				"navigationBarTitleText": ""
+				"navigationBarTitleText": "地址"
 			}
 		},
 		{
@@ -94,6 +94,16 @@
 			"path": "pages/task/index",
 			"style": {
 				"navigationBarTitleText": "Not Found"
+			},
+			"meta": {
+				"ignoreAuth": true
+			}
+		},
+		{
+			"name": "order",
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "订单"
 			},
 			"meta": {
 				"ignoreAuth": true

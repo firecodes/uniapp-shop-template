@@ -17,7 +17,7 @@
         </div>
         <div class="w-full">
             <nut-cell-group>
-                <nut-cell icon="my" title="我的订单" is-link>
+                <nut-cell icon="my" title="我的订单" @click="navTo('/pages/order/index')" is-link>
                     <template v-slot:icon>
                         <nut-icon name="dou-arrow-up" class="nut-icon-am-jump nut-icon-am-infinite"></nut-icon>
                         <nut-icon name="star-fill-n" class="nut-icon-am-blink nut-icon-am-infinite"></nut-icon>
