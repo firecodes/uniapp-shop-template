@@ -37,7 +37,7 @@ export default {
         }
         const editClick = () => {
             console.log('Click To Edit');
-            navTo('/pages/address/addEdit')
+            navTo('/pages/addEditAddress/index')
         }
         const delClick = () => {
             console.log('Click To Delete');
@@ -48,11 +48,18 @@ export default {
         const addAddress = () => {
             console.log('Click To Add');
             // , query: { type: 'edit', addressId: item.id, from: state.from  }
-            navTo('/pages/address/addEdit')
+            // navTo('/pages/addEditAddress/index')
+            // navTo('/pages/about/index')
+            jumpList1()
         }
         const navTo = (url) => {
             uni.navigateTo({ url });
         }
+        const router = useRouter();
+        const jumpList1 = () => {
+            // router.push('/pagesA/list/test1/index11?key=words&page=1&limit=15');
+            router.push({ path: '/pages/addressManage/index', query: { key: 'word', page: '1', limit: '15' } });
+        };
         return {
             data,
             clickItem,
