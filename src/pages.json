@@ -104,7 +104,7 @@
                 "selectedIconPath": "static/images/tabBar/selectedHome.png"
             },
             {
-                "pagePath": "pages/notFound/index",
+                "pagePath": "pages/notFound/404",
                 "text": "notFound",
                 "iconPath": "static/images/tabBar/demo.png",
                 "selectedIconPath": "static/images/tabBar/selectedDemo.png"
