@@ -1,0 +1,1 @@
+import{d as a,o,c as s,w as e,a as n,b as r,f as c}from"./index.1709700677459.js";import{A as _}from"./index.CyH5rvpo.js";import"./plugin-vueexport-helper.DlAUqK2U.js";const u=a({__name:"index",setup(l){return(p,i)=>{const t=c;return o(),s(_,null,{default:e(()=>[n(t,{class:"sell"},{default:e(()=>[r(" sell ")]),_:1})]),_:1})}}});export{u as default};
