@@ -1,8 +1,14 @@
-<template>
-  <div class="message">message</div>
-</template>
-
-<script lang="ts" setup>
+<script setup lang="ts">
+import AppProvider from '@/components/AppProvider/index.vue';
 </script>
 
-<style lang="sass" scoped></style>
+<template>
+  <AppProvider>
+    <view class="message">
+
+      message
+    </view>
+  </AppProvider>
+</template>
+
+<style lang="scss"></style>

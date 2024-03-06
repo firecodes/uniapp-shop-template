@@ -1,8 +1,14 @@
-<template>
-  <div class="buy">buy</div>
-</template>
-
-<script lang="ts" setup>
+<script setup lang="ts">
+import AppProvider from '@/components/AppProvider/index.vue';
 </script>
 
-<style lang="sass" scoped></style>
+<template>
+  <AppProvider>
+    <view class="buy">
+
+      buy
+    </view>
+  </AppProvider>
+</template>
+
+<style lang="scss"></style>

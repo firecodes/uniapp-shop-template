@@ -46,6 +46,7 @@
 			}
 		},
 		{
+			"name": "buy",
 			"path": "pages/buy/index",
 			"style": {
 				"navigationBarTitleText": "buy",
