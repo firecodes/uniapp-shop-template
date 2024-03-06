@@ -31,7 +31,7 @@ const my = (() => {
                     </view>
                     <view class="cust-mini">
                         <image style="height: 26px;" src="/static/images/avatar.png" />
-                        <image class="help" style="height: 26px;" src="/static/images/help.png" />
+                        <image class="logo" style="height: 26px;" src="/static/images/logo.png" />
                     </view>
                 </view>
             </view>
@@ -72,12 +72,12 @@ const my = (() => {
                                 </swiper>
                             </view>
                             <view class="bulletin">
-                                <image class="help" style="height: 26px;" src="/static/images/help.png" />
+                                <image class="logo" style="height: 26px;" src="/static/images/logo.png" />
                                 <view class="bulletinText">
                                 </view>
                                 <view class="bulletinMore">
                                     <text>更多</text>
-                                    <image class="help" style="height: 26px;" src="/static/images/help.png" />
+                                    <image class="logo" style="height: 26px;" src="/static/images/logo.png" />
                                 </view>
                             </view>
                         </view>
