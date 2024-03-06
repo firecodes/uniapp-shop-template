@@ -22,7 +22,7 @@ const handleGetStarted = () => {
 
 <template>
     <AppProvider>
-        <view class="content">
+        <view class="index">
 
 
             <view style="padding: 20px;">
@@ -60,6 +60,10 @@ const handleGetStarted = () => {
             <Iconify icon="i-system-uicons-battery-full" size="65" />
             <Iconify icon="i-system-uicons-box-add" :size="65" />
             <Iconify icon="i-system-uicons-bell-snooze" color="red" :size="65" />
+            <u-cell-group>
+                <u-cell icon="setting-fill" title="个人设置"></u-cell>
+                <u-cell icon="integral-fill" title="会员等级" value="新版本"></u-cell>
+            </u-cell-group>
         </view>
     </AppProvider>
 </template>
