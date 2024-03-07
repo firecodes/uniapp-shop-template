@@ -5,23 +5,14 @@ import AppProvider from '@/components/AppProvider/index.vue';
 const state = reactive({
   scrollTop: 0,
   tabsList: [{
-    name: '科技'
+    name: '关注',
   }, {
-    name: '音乐'
+    name: '推荐',
   }, {
-    name: '美食'
-  }, {
-    name: '文化'
-  }, {
-    name: '财经'
-  }, {
-    name: '手工'
+    name: '电影'
   }]
 });
 const page = {
-  scroll: reactive({
-    scrollTop: 0
-  }),
   methods: {
     tabsClick(item) {
       console.log('item', item);
@@ -55,8 +46,8 @@ onPageScroll((e) => {
         </view>
       </template>
     </u-navbar>
-    <scroll-view :scroll-top="page.scroll.scrollTop" scroll-y="true" class="content" @scrolltoupper="page.methods.upper"
-      @scrolltolower="page.methods.lower" @scroll="page.methods.viewscroll">
+    <scroll-view :scroll-top="page.methods.scrollTop" scroll-y="true" class="content"
+      @scrolltoupper="page.methods.upper" @scrolltolower="page.methods.lower" @scroll="page.methods.viewscroll">
       <view class="page" style="position: initial;">
 
         <view class="wrapper">

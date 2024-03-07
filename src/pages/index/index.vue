@@ -38,7 +38,7 @@ const my = (() => {
 
             <scroll-view :scroll-top="my.viewScrollTop" scroll-y="true" class="my-scroll" @scrolltoupper="my.upper"
                 @scrolltolower="my.lower" @scroll="my.viewscroll">
-                <view class="page" style="position: initial;">
+                <view>
 
                     <view class="wrapper">
                         <view class="swipe-box">

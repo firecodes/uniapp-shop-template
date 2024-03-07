@@ -71,3 +71,19 @@
 page {
   background-color: #f2f2f2;
 }
+
+.indexList {
+  flex-direction: row;
+
+  .u-index-list__letter {
+    height: calc(-194px + 100vh);
+    padding-left: 38px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    text-align: center;
+    z-index: 1000;
+    overflow-y: scroll;
+  }
+}
