@@ -37,6 +37,16 @@ import gameList from './gameList.vue';
 const route = useRoute()
 
 const gameListRef = ref<any>()
+const tabGameValue = [{
+  name: '全部',
+  type: 'all'
+}, {
+  name: '网络游戏',
+  type: 'pcGame'
+}, {
+  name: '手机游戏',
+  type: 'phoneGmae'
+}]
 const state = reactive({
   gameListRef: ref<any>(),
   gameType: 'all',
@@ -54,21 +64,15 @@ const state = reactive({
   scrollTop: 0,
   tabsList: [{
     name: '关注',
+    type: '1'
   }, {
     name: '推荐',
+    type: '2'
   }, {
-    name: '电影'
+    name: '电影',
+    type: '3'
   }],
-  gamesTabsList: [{
-    name: '全部',
-    type: 'all'
-  }, {
-    name: '网络游戏',
-    type: 'pcGame'
-  }, {
-    name: '手机游戏',
-    type: 'phoneGmae'
-  }]
+  gamesTabsList: tabGameValue
 });
 const page = {
   scroll: reactive({
@@ -77,6 +81,14 @@ const page = {
   methods: {
     tabsClick(item) {
       console.log('tabsClick', item);
+      state.gamesTabsList = tabGameValue
+      if (item.type == 2) {
+        state.gamesTabsList = [tabGameValue[0]]
+      } else if (item.type == 3) {
+        state.gamesTabsList = [tabGameValue[1]]
+      }
+      let gamesitem = state.gamesTabsList[0]
+      gameListRef.value.page.methods.initData(gamesitem.type)
     },
     gamesTabsClick(item) {
       state.gameType = item.type

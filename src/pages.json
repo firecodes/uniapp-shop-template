@@ -22,7 +22,9 @@
 			"name": "Login",
 			"path": "pages/login/index",
 			"style": {
-				"navigationBarTitleText": "登录"
+				"navigationBarTitleText": "buy",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
 			},
 			"meta": {
 				"ignoreAuth": true
