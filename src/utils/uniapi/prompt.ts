@@ -33,11 +33,11 @@ export function HideToast() {
  * @constructor
  */
 export function Loading(title: string, options?: Partial<UniApp.ShowLoadingOptions>) {
-    uni.showLoading({
-        title,
-        mask: true,
-        ...options,
-    });
+    // uni.showLoading({
+    //     title,
+    //     mask: true,
+    //     ...options,
+    // });
 }
 
 /**
