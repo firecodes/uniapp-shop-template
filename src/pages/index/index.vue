@@ -148,4 +148,6 @@ const my = (() => {
     </AppProvider>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+@import '@/assets/mall/home.scss';
+</style>

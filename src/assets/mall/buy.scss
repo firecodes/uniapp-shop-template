@@ -16,7 +16,7 @@
   border-radius: 14px 14px 0px 0px;
   margin-top: calc(0px + 44px);
   height: calc(100vh - 44px - 0px);
-  overflow: scroll
+  // overflow: scroll
 }
 
 // ::-webkit-scrollbar {
@@ -230,10 +230,11 @@
   background-size: 100%
 }
 
-// .gameList {
-//   position: relative;
-//   padding: 0 0 100px
-// }
+.gameList {
+  position: relative;
+  padding: 0 0 100px;
+  padding-bottom: 100px;
+}
 
 // .gameList-tabs {
 //   position: -webkit-sticky;
@@ -378,4 +379,5 @@
     text-align: center;
     width: 100%;
   }
+
 }

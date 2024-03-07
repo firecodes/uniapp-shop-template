@@ -15,7 +15,7 @@
           v-model="state.serachkeyword" class="serach-ui" bgColor="rgb(255, 255, 255)" borderColor="rgb(255, 220, 180)"
           :actionStyle="state.serachActionStyle" :inputStyle="state.serachInputStyle" :height="32"></u-search>
       </view>
-      <view class="gameList" style="padding-bottom: 100px;">
+      <view class="gameList">
         <view class="gameList-tabs">
           <u-tabs style="background: rgb(255, 255, 255);" :list="state.gamesTabsList"
             @click="page.methods.gamesTabsClick"></u-tabs>
@@ -120,7 +120,10 @@ onPageScroll((e) => {
 });
 </script>
 
-<style lang="scss">
+
+<style lang="scss" scoped>
+@import '@/assets/mall/buy.scss';
+
 .serach-ui {
   // background-color: rgb(255, 255, 255);
   // border-radius: 50px;

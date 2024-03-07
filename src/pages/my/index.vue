@@ -186,7 +186,10 @@ import AppProvider from '@/components/AppProvider/index.vue';
   </AppProvider>
 </template>
 
-<style lang="scss">
+
+<style lang="scss" scoped>
+@import '@/assets/mall/my.scss';
+
 .page-my-block {
   background: url("/static/bg.625cab5a.png") no-repeat;
   background-size: cover;

@@ -109,7 +109,9 @@ onLoad((query) => {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import '@/assets/mall/buy.scss';
+
 .indexItem {}
 
 .indexAnchor {

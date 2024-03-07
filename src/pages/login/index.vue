@@ -117,6 +117,7 @@ const submit = (e: any) => {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/mall/login.scss';
 // .container {
 //   margin: 0 auto;
 //   width: 80%;

@@ -119,7 +119,7 @@ constructFunc.tabbarActive()
 }
 
 .my-tab-bar {
-    height: 50px;
+    // height: 50px;
 
     .u-tabbar {
         // display: flex;

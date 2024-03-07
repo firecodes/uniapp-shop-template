@@ -71,7 +71,7 @@ page {
   .u-index-list__letter {
     height: calc(-194px + 100vh);
     padding-left: 38px;
-    right: 0px;
+    right: 50px !important;
     display: flex;
     flex-direction: column;
     user-select: none;
