@@ -191,5 +191,6 @@ import AppProvider from '@/components/AppProvider/index.vue';
   background: url("/static/bg.625cab5a.png") no-repeat;
   background-size: cover;
   background-position: top;
+  overflow: auto;
 }
 </style>

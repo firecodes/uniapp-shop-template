@@ -115,6 +115,7 @@ constructFunc.tabbarActive()
 <style lang="scss">
 .page {
     position: initial;
+    overflow: auto;
 }
 
 .my-tab-bar {
