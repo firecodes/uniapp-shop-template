@@ -8,8 +8,8 @@ onLaunch(() => {
     console.log('App Launch');
 });
 onShow(() => {
-    // const authStore = useAuthStore();
-    // authStore.initToken();
+    const authStore = useAuthStore();
+    authStore.initToken();
     console.log('App Show');
 });
 onHide(() => {
