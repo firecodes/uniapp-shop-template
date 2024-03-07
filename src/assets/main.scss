@@ -12,3 +12,11 @@ uni-view,
 uni-text {
   box-sizing: border-box;
 }
+
+.u-navbar {
+  &.navTab {
+    .u-navbar__content__left {
+      display: none;
+    }
+  }
+}
