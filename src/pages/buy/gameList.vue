@@ -50,8 +50,13 @@
 <script setup lang="ts">
 import { onLoad, onPageScroll } from '@dcloudio/uni-app';
 import listGroup from './data/listGroup.json';
+import listGroupPC from './data/listDataPC.json';
+import listDataPhone from './data/listDataPhone.json';
 import listData from './data/listData.json';
-
+const props = defineProps({
+  name: { type: String },
+});
+const emits = defineEmits(['click']);
 const state = reactive({
   serachkeyword: '',
   indexList: [],
@@ -62,14 +67,25 @@ const page = {
     scrollTop: 0
   }),
   methods: {
-    initData() {
-      let data = listGroup.data
+    click() {
+      emits('click');
+    },
+    initData(type: any) {
+      state.indexList = []
+      state.itemArr = []
+      let data: any = listGroup.data
+      const name = type || props.name
+      if (name === 'pcGame') {
+        data = listGroupPC.data
+      } else if (name === 'phoneGmae') {
+        data = listDataPhone.data
+      }
+      console.log('initData state', name, state);
       Object.keys(data).forEach((key) => {
         let item = data[key]
         state.indexList.push(key)
         state.itemArr.push(item)
       })
-      console.log('initData state', state);
     },
     upper(item) {
       console.log('item', item);
@@ -85,7 +101,7 @@ const page = {
     },
   }
 }
-
+defineExpose({ page })
 onLoad((query) => {
   console.log('onLoad query', query);
   page.methods.initData()

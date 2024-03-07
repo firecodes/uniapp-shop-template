@@ -20,9 +20,8 @@
           <u-tabs style="background: rgb(255, 255, 255);" :list="state.gamesTabsList"
             @click="page.methods.gamesTabsClick"></u-tabs>
         </view>
-        <view class="empty" style="display: none;">
-        </view>
-        <gameList></gameList>
+        <view class="empty" style="display: none;"> </view>
+        <gameList ref="gameListRef" :name="state.gameType"></gameList>
       </view>
     </scroll-view>
     <up-back-top :scroll-top="state.scrollTop"></up-back-top>
@@ -35,7 +34,12 @@ import { onPageScroll } from '@dcloudio/uni-app';
 import AppProvider from '@/components/AppProvider/index.vue';
 import gameList from './gameList.vue';
 
+const route = useRoute()
+
+const gameListRef = ref<any>()
 const state = reactive({
+  gameListRef: ref<any>(),
+  gameType: 'all',
   serachkeyword: '',
   serachActionStyle: {
     'background-color': ' rgb(255, 255, 255)',
@@ -57,10 +61,13 @@ const state = reactive({
   }],
   gamesTabsList: [{
     name: '全部',
+    type: 'all'
   }, {
     name: '网络游戏',
+    type: 'pcGame'
   }, {
-    name: '手机游戏'
+    name: '手机游戏',
+    type: 'phoneGmae'
   }]
 });
 const page = {
@@ -69,10 +76,14 @@ const page = {
   }),
   methods: {
     tabsClick(item) {
-      console.log('item', item);
+      console.log('tabsClick', item);
     },
     gamesTabsClick(item) {
-      console.log('item', item);
+      state.gameType = item.type
+      console.log('gamesTabsClick', state.gameType, state.gameListRef, gameListRef.value, item, route.query);
+      // state.gameListRef.page.methods.initData()
+      gameListRef.value.page.methods.initData(state.gameType)
+      console.log('gamesTabsClick', item, route.query);
     },
     scrollTop(item) {
       console.log('item', item);

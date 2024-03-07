@@ -1,0 +1,496 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": {
+    "A": [{
+        "game_id": 50,
+        "game_name": "APEX英雄",
+        "game_alias": "apex",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220824\/20220824104952_507936.png?x-oss-process=style\/game_icon",
+        "game_letter": "A"
+      },
+      {
+        "game_id": 254,
+        "game_name": "暗黑破坏神4",
+        "game_alias": "ahphs4",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230711\/20230711115135_799343.png?x-oss-process=style\/game_icon",
+        "game_letter": "A"
+      }
+    ],
+    "B": [{
+      "game_id": 69,
+      "game_name": "堡垒之夜",
+      "game_alias": "blzy",
+      "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220901\/20220901083835_903624.png?x-oss-process=style\/game_icon",
+      "game_letter": "B"
+    }],
+    "C": [{
+        "game_id": 28,
+        "game_name": "超激斗梦境",
+        "game_alias": "cjdmj",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132920_728236.png?x-oss-process=style\/game_icon",
+        "game_letter": "C"
+      },
+      {
+        "game_id": 39,
+        "game_name": "穿越火线",
+        "game_alias": "cyhx",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132552_111584.png?x-oss-process=style\/game_icon",
+        "game_letter": "C"
+      },
+      {
+        "game_id": 145,
+        "game_name": "超击突破",
+        "game_alias": "cjtp",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221217\/20221217175925_011273.png?x-oss-process=style\/game_icon",
+        "game_letter": "C"
+      },
+      {
+        "game_id": 170,
+        "game_name": "彩虹六号",
+        "game_alias": "chlh",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230308\/20230308180830_655498.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "C"
+      },
+      {
+        "game_id": 177,
+        "game_name": "穿越火线-高清大区",
+        "game_alias": "CFHD",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230327\/20230327152555_960844.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "C"
+      },
+      {
+        "game_id": 280,
+        "game_name": "重生边缘",
+        "game_alias": "csby",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20231016\/20231016095444_476083.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "C"
+      },
+      {
+        "game_id": 286,
+        "game_name": "从军",
+        "game_alias": "CJ",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20231025\/20231025165058_054287.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "C"
+      }
+    ],
+    "D": [{
+        "game_id": 25,
+        "game_name": "地下城与勇士端游",
+        "game_alias": "dxcyys1",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230224\/20230224173230_846773.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "D"
+      },
+      {
+        "game_id": 68,
+        "game_name": "DOTA2",
+        "game_alias": "dota2",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20231213\/20231213153614_641419.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "D"
+      },
+      {
+        "game_id": 80,
+        "game_name": "斗战神",
+        "game_alias": "douzhanshen",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221005\/20221005224750_586480.png?x-oss-process=style\/game_icon",
+        "game_letter": "D"
+      }
+    ],
+    "E": [{
+      "game_id": 167,
+      "game_name": "鹅鸭杀",
+      "game_alias": "eys",
+      "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230307\/20230307132756_088966.jpg?x-oss-process=style\/game_icon",
+      "game_letter": "E"
+    }],
+    "F": [{
+        "game_id": 73,
+        "game_name": "反恐精英OL",
+        "game_alias": "csol",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220912\/20220912160039_303248.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "F"
+      },
+      {
+        "game_id": 91,
+        "game_name": "封印者CLOSERS",
+        "game_alias": "fengyinzhe",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221014\/20221014194509_552697.png?x-oss-process=style\/game_icon",
+        "game_letter": "F"
+      }
+    ],
+    "H": [{
+      "game_id": 298,
+      "game_name": "幻兽帕鲁",
+      "game_alias": "hspl",
+      "game_image": "https:\/\/images.pxb7.com\/images\/game\/20240131\/20240131120234_351120.jpg?x-oss-process=style\/game_icon",
+      "game_letter": "H"
+    }],
+    "J": [{
+        "game_id": 10,
+        "game_name": "剑灵",
+        "game_alias": "jianling",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132223_104748.png?x-oss-process=style\/game_icon",
+        "game_letter": "J"
+      },
+      {
+        "game_id": 21,
+        "game_name": "绝地求生",
+        "game_alias": "jdqs",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132622_602865.png?x-oss-process=style\/game_icon",
+        "game_letter": "J"
+      },
+      {
+        "game_id": 86,
+        "game_name": "街头篮球",
+        "game_alias": "jtlq",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221012\/20221012223113_238684.png?x-oss-process=style\/game_icon",
+        "game_letter": "J"
+      },
+      {
+        "game_id": 160,
+        "game_name": "激战2",
+        "game_alias": "jz2",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230220\/20230220111337_662339.png?x-oss-process=style\/game_icon",
+        "game_letter": "J"
+      },
+      {
+        "game_id": 293,
+        "game_name": "剑灵怀旧服",
+        "game_alias": "jlhjf",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20231129\/20231129110711_476661.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "J"
+      }
+    ],
+    "K": [{
+      "game_id": 260,
+      "game_name": "卡拉彼丘",
+      "game_alias": "klbq",
+      "game_image": "https:\/\/images.pxb7.com\/images\/game\/20240218\/20240218154018_010518.jpg?x-oss-process=style\/game_icon",
+      "game_letter": "K"
+    }],
+    "L": [{
+        "game_id": 65,
+        "game_name": "炉石传说",
+        "game_alias": "lscs",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220825\/20220825222723_738513.png?x-oss-process=style\/game_icon",
+        "game_letter": "L"
+      },
+      {
+        "game_id": 153,
+        "game_name": "洛奇英雄传",
+        "game_alias": "lqyxz",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230214\/20230214140732_071668.png?x-oss-process=style\/game_icon",
+        "game_letter": "L"
+      },
+      {
+        "game_id": 253,
+        "game_name": "蓝色协议",
+        "game_alias": "lsxy",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230614\/20230614114217_476053.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "L"
+      }
+    ],
+    "M": [{
+        "game_id": 89,
+        "game_name": "魔兽世界·巫妖王之怒",
+        "game_alias": "mssjhj",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221013\/20221013200524_818118.png?x-oss-process=style\/game_icon",
+        "game_letter": "M"
+      },
+      {
+        "game_id": 178,
+        "game_name": "命运方舟",
+        "game_alias": "myfz",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230329\/20230329142830_138100.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "M"
+      },
+      {
+        "game_id": 230,
+        "game_name": "冒险岛",
+        "game_alias": "mxd",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230504\/20230504142353_891554.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "M"
+      }
+    ],
+    "N": [{
+        "game_id": 44,
+        "game_name": "逆战",
+        "game_alias": "nizhan",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132750_345365.png?x-oss-process=style\/game_icon",
+        "game_letter": "N"
+      },
+      {
+        "game_id": 75,
+        "game_name": "NBA2KOL2",
+        "game_alias": "nbaol2",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221005\/20221005091614_990818.png?x-oss-process=style\/game_icon",
+        "game_letter": "N"
+      },
+      {
+        "game_id": 150,
+        "game_name": "逆水寒",
+        "game_alias": "nshlbf",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20240105\/20240105123515_773180.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "N"
+      }
+    ],
+    "P": [{
+      "game_id": 85,
+      "game_name": "跑跑卡丁车",
+      "game_alias": "ppkdc",
+      "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221012\/20221012220825_873587.png?x-oss-process=style\/game_icon",
+      "game_letter": "P"
+    }],
+    "Q": [{
+        "game_id": 15,
+        "game_name": "QQ三国",
+        "game_alias": "qqsg",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132408_150761.png?x-oss-process=style\/game_icon",
+        "game_letter": "Q"
+      },
+      {
+        "game_id": 19,
+        "game_name": "QQ炫舞",
+        "game_alias": "qqxw",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221005\/20221005091928_179702.png?x-oss-process=style\/game_icon",
+        "game_letter": "Q"
+      },
+      {
+        "game_id": 20,
+        "game_name": "QQ飞车",
+        "game_alias": "qqfc",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132857_878701.png?x-oss-process=style\/game_icon",
+        "game_letter": "Q"
+      },
+      {
+        "game_id": 30,
+        "game_name": "QQ仙侠传",
+        "game_alias": "qqxj",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823133432_214460.png?x-oss-process=style\/game_icon",
+        "game_letter": "Q"
+      },
+      {
+        "game_id": 71,
+        "game_name": "枪神纪",
+        "game_alias": "qiangshenji",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220908\/20220908170341_165936.png?x-oss-process=style\/game_icon",
+        "game_letter": "Q"
+      },
+      {
+        "game_id": 77,
+        "game_name": "QQ炫舞2",
+        "game_alias": "qqxw2",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221005\/20221005093733_814566.png?x-oss-process=style\/game_icon",
+        "game_letter": "Q"
+      },
+      {
+        "game_id": 103,
+        "game_name": "全球使命3",
+        "game_alias": "qqsm3",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221024\/20221024235146_003257.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "Q"
+      },
+      {
+        "game_id": 249,
+        "game_name": "群雄逐鹿",
+        "game_alias": "qxzl",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230524\/20230524152607_419088.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "Q"
+      }
+    ],
+    "S": [{
+        "game_id": 27,
+        "game_name": "神佑释放",
+        "game_alias": "sysf",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132944_239192.png?x-oss-process=style\/game_icon",
+        "game_letter": "S"
+      },
+      {
+        "game_id": 45,
+        "game_name": "失落的方舟",
+        "game_alias": "sldfz",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132701_814986.png?x-oss-process=style\/game_icon",
+        "game_letter": "S"
+      },
+      {
+        "game_id": 74,
+        "game_name": "生死狙击2",
+        "game_alias": "ssjje",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221003\/20221003085417_979402.png?x-oss-process=style\/game_icon",
+        "game_letter": "S"
+      },
+      {
+        "game_id": 78,
+        "game_name": "守望先锋2",
+        "game_alias": "swxf2",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221005\/20221005093923_790792.png?x-oss-process=style\/game_icon",
+        "game_letter": "S"
+      },
+      {
+        "game_id": 79,
+        "game_name": "STEAM",
+        "game_alias": "steam",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221005\/20221005224634_179849.png?x-oss-process=style\/game_icon",
+        "game_letter": "S"
+      },
+      {
+        "game_id": 139,
+        "game_name": "蜀山初章",
+        "game_alias": "sscz",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221121\/20221121144828_534298.png?x-oss-process=style\/game_icon",
+        "game_letter": "S"
+      },
+      {
+        "game_id": 285,
+        "game_name": "Switch",
+        "game_alias": "NS",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20231024\/20231024135117_576359.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "S"
+      },
+      {
+        "game_id": 295,
+        "game_name": "生死狙击1",
+        "game_alias": "ssjj1",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20240106\/20240106144440_770245.jpeg?x-oss-process=style\/game_icon",
+        "game_letter": "S"
+      }
+    ],
+    "T": [{
+        "game_id": 8,
+        "game_name": "天涯明月刀",
+        "game_alias": "tymyd",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823120531_743449.png?x-oss-process=style\/game_icon",
+        "game_letter": "T"
+      },
+      {
+        "game_id": 29,
+        "game_name": "天龙八部",
+        "game_alias": "tlbb",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230418\/20230418153907_408511.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "T"
+      },
+      {
+        "game_id": 62,
+        "game_name": "坦克世界",
+        "game_alias": "tksj",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220810\/20220810211553_916492.png?x-oss-process=style\/game_icon",
+        "game_letter": "T"
+      },
+      {
+        "game_id": 107,
+        "game_name": "逃离塔科夫",
+        "game_alias": "tltkf",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230422\/20230422121047_854128.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "T"
+      },
+      {
+        "game_id": 141,
+        "game_name": "铁甲雄兵",
+        "game_alias": "tjxb",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221207\/20221207200626_624889.png?x-oss-process=style\/game_icon",
+        "game_letter": "T"
+      },
+      {
+        "game_id": 287,
+        "game_name": "the finals",
+        "game_alias": "thefinals",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20231101\/20231101144812_077088.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "T"
+      }
+    ],
+    "W": [{
+        "game_id": 130,
+        "game_name": "瓦罗兰特",
+        "game_alias": "wllt",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221107\/20221107155707_988937.png?x-oss-process=style\/game_icon",
+        "game_letter": "W"
+      },
+      {
+        "game_id": 148,
+        "game_name": "无畏契约",
+        "game_alias": "wwqy",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230329\/20230329143339_583172.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "W"
+      },
+      {
+        "game_id": 288,
+        "game_name": "王权与自由",
+        "game_alias": "wqyzy",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20231110\/20231110162111_538599.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "W"
+      }
+    ],
+    "X": [{
+      "game_id": 109,
+      "game_name": "星际战甲",
+      "game_alias": "xjzj",
+      "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221026\/20221026130058_260695.png?x-oss-process=style\/game_icon",
+      "game_letter": "X"
+    }],
+    "Y": [{
+        "game_id": 12,
+        "game_name": "英雄联盟",
+        "game_alias": "yxlm",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132353_532158.png?x-oss-process=style\/game_icon",
+        "game_letter": "Y"
+      },
+      {
+        "game_id": 23,
+        "game_name": "永劫无间",
+        "game_alias": "yjwj",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20220823\/20220823132453_598709.png?x-oss-process=style\/game_icon",
+        "game_letter": "Y"
+      },
+      {
+        "game_id": 93,
+        "game_name": "英魂之刃",
+        "game_alias": "yhzr",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221014\/20221014194850_910327.png?x-oss-process=style\/game_icon",
+        "game_letter": "Y"
+      },
+      {
+        "game_id": 210,
+        "game_name": "育碧",
+        "game_alias": "yb",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230420\/20230420102532_762204.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "Y"
+      },
+      {
+        "game_id": 259,
+        "game_name": "英雄联盟云顶之弈",
+        "game_alias": "yxlmydzy",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230627\/20230627092659_159332.jpg?x-oss-process=style\/game_icon",
+        "game_letter": "Y"
+      }
+    ],
+    "Z": [{
+        "game_id": 94,
+        "game_name": "战争雷霆",
+        "game_alias": "zzlt",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230711\/20230711115203_360373.png?x-oss-process=style\/game_icon",
+        "game_letter": "Z"
+      },
+      {
+        "game_id": 95,
+        "game_name": "战舰世界",
+        "game_alias": "zjsj",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221014\/20221014200147_411702.png?x-oss-process=style\/game_icon",
+        "game_letter": "Z"
+      },
+      {
+        "game_id": 131,
+        "game_name": "战意",
+        "game_alias": "zy",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20221108\/20221108125910_985923.png?x-oss-process=style\/game_icon",
+        "game_letter": "Z"
+      },
+      {
+        "game_id": 252,
+        "game_name": "bahei盒子",
+        "game_alias": "pxjs",
+        "game_image": "https:\/\/images.pxb7.com\/images\/game\/20230607\/20230607154141_469028.png?x-oss-process=style\/game_icon",
+        "game_letter": "Z"
+      }
+    ]
+  }
+}
