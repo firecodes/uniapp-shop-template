@@ -174,9 +174,9 @@ onReady(() => {
 
 <style lang="scss">
 .u-wrap {
-  height: calc(100vh);
+  height: calc(100vh - 50px);
   /* #ifdef H5 */
-  height: calc(100vh - var(--window-top));
+  height: calc(100vh - 50px - var(--window-top));
   /* #endif */
   display: flex;
   flex-direction: column;

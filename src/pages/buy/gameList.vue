@@ -112,7 +112,9 @@ onLoad((query) => {
 <style lang="scss" scoped>
 @import '@/assets/mall/buy.scss';
 
-.indexItem {}
+.indexList {
+  width: calc(100% - 80px);
+}
 
 .indexAnchor {
   font-size: 16px;
