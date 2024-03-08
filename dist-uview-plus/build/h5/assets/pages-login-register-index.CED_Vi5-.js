@@ -1,0 +1,1 @@
+import{a as e,j as r}from"./index.1709861520277.js";import{_ as t}from"./plugin-vueexport-helper.DlAUqK2U.js";const c={};function s(o,n){return e(),r("div",{class:"register"},"register")}const i=t(c,[["render",s]]);export{i as default};
