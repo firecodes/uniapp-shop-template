@@ -2,6 +2,7 @@
 import AppProvider from '@/components/AppProvider/index.vue';
 import search from './serach.vue'
 import commonScroll from './commonScroll.vue'
+import recommendScroll from './recommendScroll.vue'
 import { onPageScroll } from '@dcloudio/uni-app';
 const router = useRouter();
 const page = {
@@ -10,24 +11,30 @@ const page = {
   }),
   methods: {
     scrollTop(item) {
-      console.log('item', item);
+      console.log('scroll scrollTop', item);
     },
     upper(item) {
-      console.log('item', item);
+      console.log('scroll 1 upper', item);
     },
-    viewscroll(item) {
-      console.log('item', item);
+    viewscroll(e) {
+      console.log('scroll viewscroll', e, uni.$u);
+      let scrollTop = e.detail.scrollTop
+      // if(scrollTop > 50){
+      //   ("isHeadSearchSticky")
+      // } else{
+      //   ("isHeadSearchSticky")
+      // }
     },
     lower(item) {
-      console.log('item', item);
+      console.log('scroll 12 lower', item);
     },
     serach(item) {
-      console.log('item', item);
+      console.log('serach', item);
     },
   }
 }
 onPageScroll((e) => {
-  console.log("reactive", e)
+  console.log("onPageScroll", e)
 });
 
 </script>
@@ -35,10 +42,11 @@ onPageScroll((e) => {
 <template>
   <AppProvider class="home">
     <search></search>
-    <scroll-view :scroll-top="page.scroll.scrollTop" scroll-y="true" @scrolltoupper="page.methods.upper"
-      @scrolltolower="page.methods.lower" @scroll="page.methods.viewscroll">
+    <scroll-view class="my-scroll" :scroll-top="page.scroll.scrollTop" scroll-y="true"
+      @scrolltoupper="page.methods.upper" @scrolltolower="page.methods.lower" @scroll="page.methods.viewscroll">
       <view class="home-scroll">
         <commonScroll></commonScroll>
+        <recommendScroll></recommendScroll>
       </view>
     </scroll-view>
   </AppProvider>

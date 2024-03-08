@@ -35,12 +35,12 @@ const router = useRouter();
         </swiper>
       </view>
       <view class="bulletin">
-        <image class="logo" style="height: 26px;" src="/static/images/logo.png" />
+        <image class="logo" style="height: 26px;" src="/static/images/avatar.png" />
         <view class="bulletinText">
         </view>
         <view class="bulletinMore">
           <text>更多</text>
-          <image class="logo" style="height: 26px;" src="/static/images/logo.png" />
+          <image class="logo" style="height: 26px;" src="/static/images/avatar.png" />
         </view>
       </view>
     </view>
@@ -93,14 +93,12 @@ const router = useRouter();
         <view class="item"> 游戏交易 </view>
         <view class="item"> 账号估价 </view>
       </view>
-      <!-- <view class="new_relatedCards leftTop">
-                                <view class="item"> 游戏交易 </view>
-                                <view class="item"> 账号估价 </view>
-                            </view>
-                            <view class="new_relatedCards rightTop">
-                                <view class="item"> 游戏交易 </view>
-                                <view class="item"> 账号估价 </view>
-                            </view> -->
+    </view>
+    <view class="recommend-title">
+      <image src="/static/images/avatar.png" class="headLogo" style="height: 30px;" />
+      <text class="label omit">合同保障</text>
+      <text class="label omit">专业团队</text>
+      <view class="recommend-more">></view>
     </view>
   </view>
 

@@ -1,5 +1,11 @@
 <script setup lang="ts">
+import { onPageScroll } from '@dcloudio/uni-app';
 const router = useRouter();
+onPageScroll((e) => {
+  console.log("onPageScroll serach", e)
+  // isHeadSearchSticky
+});
+
 </script>
 
 <template>
