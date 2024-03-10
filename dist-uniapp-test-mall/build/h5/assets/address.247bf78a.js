@@ -1,0 +1,1 @@
+import{g as s,p as a,a as r,d as e}from"./request.ff2c352d.js";const d=()=>s({url:"/member/address"}),m=s=>e({url:`/member/address/${s}`}),b=a=>s({url:`/member/address/${a}`}),t=s=>a({url:"/member/address",data:s}),u=(s,a)=>r({url:`/member/address/${s}`,data:a});export{u as a,d as b,m as d,b as g,t as p};

@@ -1,0 +1,1 @@
+import{Q as s,p as a}from"./index.1710046744346.js";import{b as e}from"./address.247bf78a.js";const t=s("address",(()=>{const s=a(),t=a(),r=a=>{s.value=a};return{address:s,addressList:t,setAddress:r,getAddressListData:async()=>{const s=await e();t.value=s.result,r(t.value.find((s=>s.isDefault)))}}}),{persist:!0});export{t as u};

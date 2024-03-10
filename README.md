@@ -4,6 +4,7 @@
 2. <a href="https://firecodes.github.io/uniapp-shop-template/dist/build/h5/"> uniapp 商城 demo</a>
 3. <a href="https://firecodes.github.io/uniapp-shop-template/dist-nut-ui/build/h5/"> uniapp 商城 demo2（UI组件： nutui-uniapp）</a>
 3. <a href="https://firecodes.github.io/uniapp-shop-template/dist-uview-plus/build/h5/"> uniapp 商城 demo3（UI组件： uview-plus）</a>
+2. <a href="https://firecodes.github.io/uniapp-shop-template/dist-uniapp-test-mall/build/h5/"> uniapp 商城 demo5</a>
 
 # H5项目 界面展示--UI组件 vant4
 1. <a href="https://firecodes.github.io/uniapp-shop-template/dist-vant-template/"> H5项目demo</a>

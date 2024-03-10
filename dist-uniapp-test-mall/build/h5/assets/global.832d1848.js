@@ -1,0 +1,1 @@
+import{g as s}from"./request.ff2c352d.js";const a=(a=1)=>s({url:"/home/banner",data:{distributionSite:a}}),e=a=>s({url:"/home/goods/guessLike",data:a});export{e as a,a as g};

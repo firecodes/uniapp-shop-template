@@ -1,0 +1,1 @@
+import{Q as s,p as r}from"./index.1710046744346.js";const t=s("user",(()=>{const s=r();return{user:s,setUser:r=>{s.value=r}}}),{persist:!0}),e=(s,r)=>{const t=s.__vccOpts||s;for(const[e,o]of r)t[e]=o;return t};export{e as _,t as u};
