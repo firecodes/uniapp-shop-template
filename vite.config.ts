@@ -25,6 +25,11 @@ export default ({ mode }: ConfigEnv): UserConfig => {
 			},
 			extensions: ['.js', '.json', '.ts', '.vue'], // 使用路径别名时想要省略的后缀名，可以自己 增减
 		},
+		// 自定义全局变量
+		define: {
+			'process.env': {}
+			//	ROUTES: new TransformPages().routes,
+		},
 		server: {
 			host: true,
 			// open: true,
@@ -39,6 +44,34 @@ export default ({ mode }: ConfigEnv): UserConfig => {
 					target: env.VITE_BASE_URL,
 					changeOrigin: true,
 					rewrite: (path) => path.replace(/^\/upload/, ''),
+				},
+			},
+		},
+		// 构建配置
+		build: {
+			// outDir: 'dist',
+			outDir: 'dist-uniapp-test-mall',
+			chunkSizeWarningLimit: 1500,
+			// sourcemap: false,
+			rollupOptions: {
+				output: {
+					entryFileNames: `assets/[name].${new Date().getTime()}.js`,
+					chunkFileNames: `assets/[name].${new Date().getTime()}.js`,
+					assetFileNames: `assets/[name].${new Date().getTime()}.[ext]`,
+					compact: true,
+					// manualChunks: {
+					//     vue: ['vue', 'vue-router', 'vuex'],
+					//     echarts: ['echarts'],
+					// },
+					// TODO: 处理GitHub Pages 部署 _plugin-vue_export-helper.js 404
+					// https://github.com/rollup/rollup/blob/master/src/utils/sanitizeFileName.ts
+					sanitizeFileName(name: any) {
+						const match = DRIVE_LETTER_REGEX.exec(name)
+						const driveLetter = match ? match[0] : ''
+						// A `:` is only allowed as part of a windows drive letter (ex: C:\foo)
+						// Otherwise, avoid them because they can refer to NTFS alternate data streams.
+						return driveLetter + name.slice(driveLetter.length).replace(INVALID_CHAR_REGEX, '')
+					},
 				},
 			},
 		},
